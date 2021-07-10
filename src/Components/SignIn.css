@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Open+Sans+Condensed:wght@300&display=swap');
+.jumbotron{
+    background-color: #f1f3f2;
+}
+.column_width{
+    max-width: 470px;
+}
+.leftHeading{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 60px;
+    /* font-weight: 300; */
+    line-height: 0.9;
+    letter-spacing: -1px;
+    color: rgb(38, 45, 68);
+}
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    /* font-weight: 300; */
+}
