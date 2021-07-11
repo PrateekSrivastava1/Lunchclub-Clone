@@ -1,20 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Open+Sans+Condensed:wght@300&display=swap');
-.jumbotron{
-    background-color: #f1f3f2;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Open+Sans+Condensed:wght@300&display=swap&family=PT+Sans&display=swap");
+.jumbotron {
+  background-color: #f1f3f2;
 }
-.column_width{
-    max-width: 470px;
+.column_width {
+  max-width: 470px;
 }
-.leftHeading{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 60px;
-    /* font-weight: 300; */
-    line-height: 0.9;
-    letter-spacing: -1px;
-    color: rgb(38, 45, 68);
+.right_column_width {
+  max-width: 500px;
 }
-p{
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 20px;
-    /* font-weight: 300; */
+.leftHeading {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  /* font-weight: 300; */
+  line-height: 1;
+  letter-spacing: -1px;
+  color: rgb(38, 45, 68);
+}
+p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  letter-spacing: 5;
+  line-height: 1.2;
+  color: rgb(112, 112, 110);
+  /* font-weight: 300; */
+}
+.link{
+  text-decoration: none;
+}
+
+small{
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  color: rgb(112, 112, 110);
+  letter-spacing: 5;
+  line-height: 1.2;
+}
+.input_element {
+  background-color: #ffffff;
+}
+Button{
+  background-color: #ffffff;
+}
+.googleIcon{
+  color: red;
+}
+@media only screen and (max-width: 600px) {
+  .footerLogo{
+    display: none;
+  }
+  p{
+    font-size: 10px;
+  }
 }
