@@ -1,9 +1,10 @@
 import React from "react";
+import Navbars from "./Navbars";
 
 function Weekly() {
   return (
     <div>
-      <h1>this is weekly page</h1>
+      <Navbars/>
     </div>
   );
 }
