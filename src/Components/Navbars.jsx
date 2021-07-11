@@ -8,10 +8,8 @@ import EventIcon from "@material-ui/icons/Event";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PeopleIcon from "@material-ui/icons/People";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import SearchIcon from "@material-ui/icons/Search";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import { Input } from "@material-ui/core";
 // -------------------------------------------------------------------------
 
 import {
@@ -39,9 +37,7 @@ function Navbars() {
             <ChatBubbleIcon />
           </Nav.Link>
         </div>
-        {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
         <Form className="d-flex">
-          {/* <SearchIcon/> */}
           <FormControl
             type="search"
             placeholder="Search Lunchclub"
@@ -105,11 +101,11 @@ function Navbars() {
                 <div className="btn-group dropstart" role="group">
                   <button
                     type="button"
-                    className="btn btn-light dropdown-toggle dropdown-toggle-split profileIconBorder"
+                    className="btn btn-light dropdown-toggle  profileIconBorder"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    {/* <span className="visually-hidden">Toggle Dropstart</span> */}
+                    <img src="https://lunchclub.com/static/media/default-picture.90b9161a.svg" alt="" />
                   </button>
                   <ul className="dropdown-menu">
                     <li>Profile</li>
@@ -118,9 +114,6 @@ function Navbars() {
                     <li>Link3</li>
                   </ul>
                 </div>
-                <button type="button" className="btn btn-light profileIconBorder">
-                  <AccountCircleIcon />
-                </button>
               </div>
             </div>
           </Navbar.Collapse>
