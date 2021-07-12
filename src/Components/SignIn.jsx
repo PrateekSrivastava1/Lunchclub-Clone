@@ -34,7 +34,7 @@ function SignIn() {
               <h1 className="leftHeading pb-4">
                 Your network is waiting for you.
               </h1>
-              <p>
+              <p className="pElement">
                 We facilitate casual conversations that lead to not-so-casual
                 professional impact. Powered by AI.
               </p>
@@ -50,7 +50,6 @@ function SignIn() {
                         alt="G"
                       />
                       .
-                      {/* <FontAwesomeIcon className="googleIcon" icon={faGoogle}/> */}
                     </span>
                   </div>
                   
@@ -63,8 +62,8 @@ function SignIn() {
                     aria-describedby="basic-addon1"
                   />
                 </div>
-                <br /> <p>OR</p>
-                <div className="input-group">
+                <br /> <p className="pElement">OR</p>
+                <div className="input-group"> 
                   <input
                     type="text"
                     className="form-control border-dark rounded-left"
@@ -129,7 +128,7 @@ function SignIn() {
             sm={4}
             className=" "
           >
-            <p className="text-primary d-flex justify-content-start m-2 ">
+            <p className="text-primary d-flex justify-content-start m-2 pElement ">
                 Careers
                 <span>
                   <small> WE'RE HIRING</small>

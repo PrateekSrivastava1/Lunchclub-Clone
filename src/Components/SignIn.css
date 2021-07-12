@@ -11,18 +11,16 @@
 .leftHeading {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 60px;
-  /* font-weight: 300; */
   line-height: 1;
   letter-spacing: -1px;
   color: rgb(38, 45, 68);
 }
-p {
+.pElement {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   letter-spacing: 5;
   line-height: 1.2;
   color: rgb(112, 112, 110);
-  /* font-weight: 300; */
 }
 .link{
   text-decoration: none;

@@ -1,0 +1,19 @@
+.body {
+  background-color: rgba(226, 228, 229, 0.315);
+  height: 100vh;
+}
+.calender {
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid rgb(219, 218, 218);
+}
+.pickers {
+  border: 1px solid rgb(219, 218, 218);
+}
+.info {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  /* letter-spacing: 5; */
+  /* line-height: 1.2; */
+  color: rgb(112, 112, 110);
+}

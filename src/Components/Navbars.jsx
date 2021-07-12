@@ -8,16 +8,12 @@ import EventIcon from "@material-ui/icons/Event";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PeopleIcon from "@material-ui/icons/People";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
-import SearchIcon from "@material-ui/icons/Search";
-import InputAdornment from "@material-ui/core/InputAdornment";
 // -------------------------------------------------------------------------
 
 import {
   Form,
   FormControl,
-  Nav,
-  NavbarBrand,
-  NavDropdown,
+  Nav
 } from "react-bootstrap";
 function Navbars() {
   return (
@@ -26,6 +22,7 @@ function Navbars() {
         <div className="brandSpace">
           <Navbar.Brand href="#home">
             <img
+             className="navImage"
               width="150"
               src="https://lunchclub.com/static/media/logo2.4c4b75fd.svg"
               alt=""
@@ -43,11 +40,6 @@ function Navbars() {
             placeholder="Search Lunchclub"
             className="mr-2 d-none d-lg-block d-sm-none"
             aria-label="Search"
-            startAdornment={
-              <InputAdornment position="start">
-                <SearchIcon />
-              </InputAdornment>
-            }
           />
         </Form>
         <div className="ms-auto  hideNav d-none d-lg-block d-sm-none">
@@ -98,16 +90,16 @@ function Navbars() {
             </div>
             <div className="profileIconSpace">
               <div className="btn-group">
-                <div className="btn-group dropstart" role="group">
+                <div className="btn-group dropstart " role="group">
                   <button
                     type="button"
                     className="btn btn-light dropdown-toggle  profileIconBorder"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img src="https://lunchclub.com/static/media/default-picture.90b9161a.svg" alt="" />
+                    <img className="navImage" src="https://lunchclub.com/static/media/default-picture.90b9161a.svg" alt="" />
                   </button>
-                  <ul className="dropdown-menu">
+                  <ul className="dropdown-menu"> 
                     <li>Profile</li>
                     <li>Link1</li>
                     <li>Link2</li>
