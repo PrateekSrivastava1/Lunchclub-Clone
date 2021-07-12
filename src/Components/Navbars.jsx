@@ -86,7 +86,7 @@ function Navbars() {
                     <ChatBubbleIcon />
                   </Nav.Link>
                 </div>
-              </Nav>
+              </Nav> 
             </div>
             <div className="profileIconSpace">
               <div className="btn-group">
@@ -106,7 +106,7 @@ function Navbars() {
                     <li>Link3</li>
                   </ul>
                 </div>
-              </div>
+              </div> 
             </div>
           </Navbar.Collapse>
         </div>

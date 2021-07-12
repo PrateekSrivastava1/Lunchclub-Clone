@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Navbars from "./Navbars";
 import Tooltip from "./Tooltip";
-import DateAndTimePickers from "./DateAndTimePicker";
 import DatePicker from "./DatePicker";
 import TimePicker from "./TimePicker";
 function Weekly() {
@@ -44,29 +43,20 @@ function Weekly() {
                 </Col>
               </Row>
               <Row className="container w-100 ">
-                <Col
-                  lg={12}
-                  col={12} 
-                  sm={12} 
-                  className= "pt-5 pickers"
-                >
+                <Col lg={12} col={12} sm={12} className="pt-5 pickers">
                   <p className="info">
                     These are the best times for New York City (in EDT). Each
                     meeting is 45 minutes!
                   </p>
                   <br />
-                  <p className="info">These times are the best fit with your calendar.</p>
+                  <p className="info">
+                    These times are the best fit with your calendar.
+                  </p>
                 </Col>
               </Row>
             </Container>
           </div>
-          {/* <div className="container w-75">
-            <p>
-              These are the best times for New York City (in EDT). Each meeting
-              is 45 minutes!
-            </p>
-            <p>These times are the best fit with your calendar.</p>
-          </div> */}
+          
         </div>
       </div>
     </>
@@ -74,3 +64,5 @@ function Weekly() {
 }
 
 export default Weekly;
+
+
