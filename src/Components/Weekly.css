@@ -1,6 +1,6 @@
 .body {
   background-color: rgba(226, 228, 229, 0.315);
-  height: 100vh;
+  height: 950px;
 }
 .calender {
   border-radius: 5px;
@@ -13,7 +13,7 @@
 .info {
   font-family: "PT Sans", sans-serif;
   font-size: 15px;
-  /* letter-spacing: 5; */
+  /* letter-spacing: 5; */ 
   /* line-height: 1.2; */
   color: rgb(112, 112, 110);
 }
