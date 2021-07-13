@@ -29,7 +29,7 @@ function Weekly() {
             ptag="Sign up for your first match this
           week."
           />
-          <div className="container w-75 h-100 pt-5 mt-5  calender ">
+          <div className="container w-auto h-100 pt-5 mt-5  calender ">
             <h4 className=" d-flex justify-content-center">
               Schedule your matches
             </h4>
@@ -117,22 +117,22 @@ function Weekly() {
                     */}
                     
                     {check ? (
-                      <Button variant="primary" size="lg" className="w-25">
-                        I'm In!
+                      <Button variant="primary" size="lg" className="popupBtn">
+                        I'm in!
                       </Button>
                     ) : (
                       <Button
                         variant="primary"
                         size="lg"
-                        className="w-25"
+                        className="popupBtn info"
                         disabled
                       >
-                        I'm In!
+                        I'm in!
                       </Button>
                     )}
                     <br />
                     <br />
-                    <Button variant="primary" size="lg">
+                    <Button variant="outline-primary" size="lg" className="popupBtn info">
                       Not this week
                     </Button>
                   </Popup>

@@ -4,7 +4,7 @@ import CloseIcon from "@material-ui/icons/Close";
 function Popup(props) {
   return props.trigger ? (
     <div className="popup d-flex text-center">
-      <div className="popupInner">
+      <div className="popupInner"> 
         <CloseIcon
           className="closeBtn"
           onClick={() => props.setTrigger(false)}

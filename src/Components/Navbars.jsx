@@ -60,12 +60,14 @@ function Navbars() {
                   </LinkContainer>
                 </div>
                 <div className="iconSpace ">
-                  <Nav.Link
-                    href="#deets"
-                    className="pl-2 iconBorder d-sm-none d-md-block"
-                  >
-                    <MailOutlineIcon />
-                  </Nav.Link>
+                  <LinkContainer to="../Invite">
+                    <Nav.Link
+                      href="#deets"
+                      className="pl-2 iconBorder d-sm-none d-md-block"
+                    >
+                      <MailOutlineIcon /> 
+                    </Nav.Link>
+                  </LinkContainer>
                 </div>
                 <div className="iconSpace ">
                   <Nav.Link

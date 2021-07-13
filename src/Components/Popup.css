@@ -8,13 +8,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 .popupInner{
     position: relative;
     padding: 32px;
     width: 50%;
-    max-width: 640%;
+    max-width: 100%;
     background-color: rgb(255, 255, 255);
     height: auto;
     max-height: 400px;
@@ -22,6 +21,11 @@
     border-radius: 10px;
     /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
 }
+@media only screen and (max-width: 600px) {
+    .popupInner {
+        width: 90%;
+    }
+  }
 .popupInner .closeBtn{
     position: absolute;
     top: 16px;

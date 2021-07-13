@@ -1,0 +1,13 @@
+.inviteBody{
+    background-color: rgba(226, 228, 229, 0.315);
+    height: 950px;
+}
+
+.block{
+    border-radius: 5px;
+}
+.content{
+    border: 1px solid rgb(195, 193, 193);
+    border-radius: 5px;
+    background-color: white;
+}

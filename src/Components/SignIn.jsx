@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "../Components/SignIn.css";
+import "./SignIn.css";
 import { Button } from "react-bootstrap";
 import ImageShow from "./ImageShow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
