@@ -10,4 +10,52 @@
     border: 1px solid rgb(195, 193, 193);
     border-radius: 5px;
     background-color: white;
+    margin: 3rem;
+}
+.colDiv{
+    padding: 3rem;
+    max-width: 600px;
+}
+.inviteInput{
+    width: 120%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 110, 255, 0);
+    background-color: rgba(226, 228, 229, 0.644);
+}
+.inviteInputButton{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: rgb(0, 110, 255);
+    border: 1px solid rgb(0, 110, 255);
+    border-radius: 5px;
+}
+.inputRowBox{
+    padding-left: 220px;
+    /* margin-right: 20px; */
+}
+.inputRowButton{
+    padding-left: 30px;
+}
+@media only screen and (max-width: 600px){
+    .content{
+       margin: 0;
+    }
+    .colDiv{
+        padding: 0;
+        padding-top: 15px;
+    }
+    .inviteInput{
+        width: 100%;
+    }
+    .inputRowBox{
+        padding-left: 5px;
+    }
+    .inviteInputButton{
+        width: 260px;
+    }
+    .inputRowButton{
+        padding-left: 0px;
+    }
 }
