@@ -9,9 +9,15 @@ import DatePicker from "./DatePicker";
 import TimePicker from "./TimePicker";
 import DropdownTopicsMenu from "./DropdownTopicsMenu";
 import { useState } from "react";
+import Popup from "./Popup";
+import Checkbox from "@material-ui/core/Checkbox";
+import { Button } from "react-bootstrap";
 function Weekly() {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState(""); //for dropdown menu
 
+  const [buttonPopup, setButtonPopup] = useState(false); // for popup
+
+  const [check, setCheckbox] = useState(false); // for checkbox
   return (
     <>
       <div className="body">
@@ -59,13 +65,78 @@ function Weekly() {
                     </p>
                   </Col>
                 </Row>
-                {/* <Row className="container w-100 "> */}
-                <Row className="container pt-2">
+                <Row className="container pt-5 pb-5 ">
                   <DropdownTopicsMenu
                     selected={selected}
                     setSelected={setSelected}
                   />
                 </Row>
+                <div className="container pb-5 ">
+                  <input
+                    class="btn btn-primary"
+                    type="submit"
+                    value="Pass for a week"
+                    onClick={() => setButtonPopup(true)}
+                  />
+                  <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+                    <h4>You're invited to Lunch!</h4>
+                    <p className="info">
+                      We're running an exclusive beta for select Lunchclub
+                      members in San Francisco Bay this week. Sign up for a 1:1
+                      in-person meeting!
+                    </p>
+                    <img
+                      src="https://lunchclub.com/static/media/in-person.3473786f.svg"
+                      alt=""
+                    />
+                    <p>
+                      <img
+                        src="https://lunchclub.com/static/media/location-irl.c9f27c9c.svg"
+                        alt=""
+                      />
+                      <strong className="info"> SoMa, San Francisco Bay</strong>
+                    </p>
+                    <p>
+                      <img
+                        src="https://lunchclub.com/static/media/calendar-irl.0f799e30.svg"
+                        alt=""
+                      />
+                      <strong className="info"> Friday, July 16th, 12pm</strong>
+                    </p>
+                    <p className="info">
+                      <input
+                        type="checkbox"
+                        onClick={() => setCheckbox(!check)}
+                      />
+                      I am fully vaccinated and understand that this meeting is
+                      in person.
+                    </p>
+
+                    {/* I'm in button will be disabled if checkbox will not be checked 
+                      checking checkbox is checked or not using ternary operator
+                    */}
+                    
+                    {check ? (
+                      <Button variant="primary" size="lg" className="w-25">
+                        I'm In!
+                      </Button>
+                    ) : (
+                      <Button
+                        variant="primary"
+                        size="lg"
+                        className="w-25"
+                        disabled
+                      >
+                        I'm In!
+                      </Button>
+                    )}
+                    <br />
+                    <br />
+                    <Button variant="primary" size="lg">
+                      Not this week
+                    </Button>
+                  </Popup>
+                </div>
               </Container>
             </div>
           </div>

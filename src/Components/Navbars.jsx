@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import "../Components/Navbars.css";
-
+import { Link } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
 // ----------------------------Material UI icons---------------------------
 import HomeIcon from "@material-ui/icons/Home";
 import EventIcon from "@material-ui/icons/Event";
@@ -10,11 +11,8 @@ import PeopleIcon from "@material-ui/icons/People";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 // -------------------------------------------------------------------------
 
-import {
-  Form,
-  FormControl,
-  Nav
-} from "react-bootstrap";
+import { Form, FormControl, Nav, NavLink } from "react-bootstrap";
+
 function Navbars() {
   return (
     <div className="container-fluid fixed-top navBar">
@@ -22,7 +20,7 @@ function Navbars() {
         <div className="brandSpace">
           <Navbar.Brand href="#home">
             <img
-             className="navImage"
+              className="navImage"
               width="150"
               src="https://lunchclub.com/static/media/logo2.4c4b75fd.svg"
               alt=""
@@ -55,12 +53,11 @@ function Navbars() {
                   </Nav.Link>
                 </div>
                 <div className="iconSpace  ">
-                  <Nav.Link
-                    href="#pricing"
-                    className="pl-2 iconBorder d-sm-none d-md-block"
-                  >
-                    <EventIcon />
-                  </Nav.Link>
+                  <LinkContainer to="../Weekly">
+                    <Nav.Link className="pl-2 iconBorder d-sm-none d-md-block">
+                      <EventIcon />
+                    </Nav.Link>
+                  </LinkContainer>
                 </div>
                 <div className="iconSpace ">
                   <Nav.Link
@@ -86,7 +83,7 @@ function Navbars() {
                     <ChatBubbleIcon />
                   </Nav.Link>
                 </div>
-              </Nav> 
+              </Nav>
             </div>
             <div className="profileIconSpace">
               <div className="btn-group">
@@ -97,16 +94,20 @@ function Navbars() {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <img className="navImage" src="https://lunchclub.com/static/media/default-picture.90b9161a.svg" alt="" />
+                    <img
+                      className="navImage"
+                      src="https://lunchclub.com/static/media/default-picture.90b9161a.svg"
+                      alt=""
+                    />
                   </button>
-                  <ul className="dropdown-menu"> 
+                  <ul className="dropdown-menu">
                     <li>Profile</li>
                     <li>Link1</li>
                     <li>Link2</li>
                     <li>Link3</li>
                   </ul>
                 </div>
-              </div> 
+              </div>
             </div>
           </Navbar.Collapse>
         </div>
