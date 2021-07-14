@@ -155,7 +155,7 @@ function SignIn() {
               src="https://lunchclub.com/static/media/logo-icon.bacfc46d.svg"
               alt=""
             />
-          </Col>
+          </Col> 
         </Row>
       </Container>
     </>

@@ -1,6 +1,6 @@
 .inviteBody{
     background-color: rgba(226, 228, 229, 0.315);
-    height: 950px;
+    height: 1150px;
 }
 
 .block{
@@ -27,8 +27,17 @@
     width: 150px;
     height: 40px;
     color: white;
-    background-color: rgb(0, 110, 255);
-    border: 1px solid rgb(0, 110, 255);
+    background-color: rgb(69, 106, 221);
+    border: 1px solid rgb(69, 106, 221);
+    border-radius: 5px;
+}
+.shareButton{
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(69, 106, 221);
+    border: 1px solid rgb(69, 106, 221);
     border-radius: 5px;
 }
 .inputRowBox{
@@ -41,6 +50,7 @@
 @media only screen and (max-width: 600px){
     .content{
        margin: 0;
+       margin-top: 20px;
     }
     .colDiv{
         padding: 0;

@@ -80,7 +80,7 @@ function Weekly() {
                   />
                   <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                     <h4>You're invited to Lunch!</h4>
-                    <p className="info">
+                    <p className="info"> 
                       We're running an exclusive beta for select Lunchclub
                       members in San Francisco Bay this week. Sign up for a 1:1
                       in-person meeting!

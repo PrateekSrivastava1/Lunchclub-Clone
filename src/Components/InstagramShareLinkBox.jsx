@@ -1,12 +1,11 @@
 import React from "react";
+import "./InstagramShareLinkBox.css";
 
-function InstagramShareLinkBox() {
+function InstagramShareLinkBox(props) {
   return (
     <div>
-      <textarea id="" name="" rows="4" cols="50">
-        At w3schools.com you will learn how to make a website. They offer free
-        tutorials in all web development technologies.
-      </textarea>
+      <textarea className=" info socialShareLinkBox">{props.children}</textarea>
+      {console.log(props.children)}
     </div>
   );
 }
