@@ -9,3 +9,4 @@
 | July 11 |      4      | Completed Sign In page, now will move towards weekly page which will be use to choose times to meet. |
 | July 12 |      6      | Created Navbars, tooltips, and Completed Weekly page .                                               |
 | July 13 |      4      | Created Dropdown menu, and popup components .                                                        |
+| July 14 |      2      | Created Social Share textarea component for Invite page .                                            |
