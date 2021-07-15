@@ -4,7 +4,7 @@ import SignIn from "./Components/SignIn";
 import Home from "./Components/Home";
 import weekly from "./Components/Weekly";
 import Invite from "./Components/Invite";
-import Messanger from "./Components/ChatRoom/Messanger";
+import Messenger from "./Components/ChatRoom/Messenger";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Route path="/signin" component={SignIn} exact />
         <Route path="/weekly" component={weekly} exact />
         <Route path="/Invite" component={Invite} exact />
-        <Route path="/Messanger" component={Messanger} exact />
+        <Route path="/Messenger" component={Messenger} exact />
         <Route path="/" component={Home} exact />
       </Switch>
     </>

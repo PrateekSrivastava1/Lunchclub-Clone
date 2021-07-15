@@ -2,65 +2,176 @@ import React from "react";
 import Navbars from "../Navbars";
 import "./Messenger.css";
 import Conversation from "../Conversations/Conversation";
-import Message from "../Messages/Message"; 
+import Message from "../Messages/Message";
 import ChatOnline from "../ChatOnline/ChatOnline";
-function Messenger() { 
+function Messenger() {
   return (
     <>
       <Navbars />
-      <div className="messengerBody">
-      <div className="container messengerContainer w-75 pt-3 mt-5"> 
-        <div className="messenger ">
-          <div className="chatMenu">
-            <div className="chatMenuWrapper">
-              <input
-                placeholder="Search for friend"
-                type="text"
-                className="chatMenuInput"
-              />
-              <Conversation /> 
-              <Conversation /> 
-              <Conversation />
-              <Conversation /> 
+      <div className="messengerBody ">
+        <div className=" messengerContainer">
+          <div className="messenger ">
+            <div className="chatMenu">
+              <div className="chatMenuWrapper">
+                <input
+                  placeholder="Search for friend"
+                  type="text"
+                  className="chatMenuInput"
+                />
+                <Conversation
+                  Name={"Prateek"}
+                  DP={
+                    "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                  }
+                />
+                <Conversation
+                  Name={"Nitin"}
+                  DP={
+                    "https://img.icons8.com/color/48/000000/user-male-skin-type-5.png"
+                  }
+                />
+                <Conversation
+                  Name={"Pranjal"}
+                  DP={
+                    "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
+                  }
+                />
+                <Conversation
+                  Name={"Shashwat"}
+                 
+                  DP={
+                    "https://img.icons8.com/doodle/48/000000/user-male-skin-type-5.png"
+                  }
+                /> 
+              </div>
             </div>
-          </div>
-          <div className="chatBox">
-            <div className="chatBoxWrapper">
-              <div className="online">
-              <ChatOnline /> 
-              </div>
-              <div className="chatBoxTop"> 
-                <Message />
-                <Message own={true} />
-                <Message />
-                <Message own={true} />
-                <Message />
-                <Message own={true} />
-                <Message />
-                <Message own={true} />
-                <Message />
-                <Message own={true} />
-                <Message />
-                <Message own={true} />
-                <Message />
-                <Message own={true} />
-                <Message />
-                <Message own={true} />
-                <Message />
-                <Message own={true} />
-                <Message />
-              </div>
-              <div className="chatBoxButtom">
-                <textarea
-                  className="chatMessageInput"
-                  placeholder="Type Something here..."
-                ></textarea>
-                <button className="chatSubmitButton">Send</button>
+            <div className="chatBox">
+              <div className="chatBoxWrapper">
+                <div className="online">
+                  <ChatOnline
+                    Name={"Prateek"}
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                </div>
+                <div className="chatBoxTop">
+                  <Message
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    own={true}
+                    DP={
+                      "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    own={true}
+                    DP={
+                      "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    own={true}
+                    DP={
+                      "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    own={true}
+                    DP={
+                      "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    own={true}
+                    DP={
+                      "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    own={true}
+                    DP={
+                      "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    own={true}
+                    DP={
+                      "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    own={true}
+                    DP={
+                      "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    own={true}
+                    DP={
+                      "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                  <Message
+                    DP={
+                      "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
+                    }
+                  />
+                </div>
+                <div className="chatBoxButtom">
+                  <textarea
+                    className="chatMessageInput"
+                    placeholder="Type Something here..."
+                  ></textarea>
+                  <button className="chatSubmitButton">Send</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </>
   );

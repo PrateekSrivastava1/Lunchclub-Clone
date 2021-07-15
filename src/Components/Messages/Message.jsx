@@ -1,14 +1,14 @@
 import React from "react";
 import "./Message.css";
-function Message({ own }) {
+function Message({ own, DP  }) {
   return (
     <div className={own ? "message own" : "message"}>
       <div className="messageTop">
         <img
           className="messageImg"
-          src="https://lunchclub.com/static/media/default-picture.90b9161a.svg"
+          src={DP}
           alt=""
-        />
+        /> 
         <p className="messageText">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
           ea? 

@@ -1,16 +1,16 @@
 import React from "react";
 import "./Conversation.css";
-function Conversation() {
+function Conversation(props) {
   return (
     <div className="conversation">
       <img
         className="conversationImg"
-        src="https://lunchclub.com/static/media/default-picture.90b9161a.svg"
+        src={props.DP}
         alt=""
       />
-      <span className="conversationName"> Man Name </span>
+      <span className="conversationName"> {props.Name} </span>
     </div>
   );
-}
+} 
 
 export default Conversation;

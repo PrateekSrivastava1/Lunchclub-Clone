@@ -76,7 +76,7 @@ function Navbars() {
                   </Nav.Link>
                 </div>
                 <div className="iconSpace ">
-                  <LinkContainer to="./Messanger">
+                  <LinkContainer to="./Messenger"> 
                     <Nav.Link
                       className="pl-2 iconBorder d-none d-sm-block d-lg-block"
                     >
