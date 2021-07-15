@@ -10,3 +10,4 @@
 | July 12 |      6      | Created Navbars, tooltips, and Completed Weekly page .                                               |
 | July 13 |      4      | Created Dropdown menu, and popup components .                                                        |
 | July 14 |      2      | Created Social Share textarea component for Invite page .                                            |
+| July 15 |      3      | Created Messenger page and it's Components .                                                          |
