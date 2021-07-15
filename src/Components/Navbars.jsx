@@ -62,28 +62,27 @@ function Navbars() {
                 <div className="iconSpace ">
                   <LinkContainer to="../Invite">
                     <Nav.Link
-                      href="#deets"
                       className="pl-2 iconBorder d-sm-none d-md-block"
                     >
-                      <MailOutlineIcon /> 
+                      <MailOutlineIcon />
                     </Nav.Link>
                   </LinkContainer>
                 </div>
                 <div className="iconSpace ">
                   <Nav.Link
-                    href="#memes"
                     className="pl-2 iconBorder d-sm-none d-md-block"
                   >
                     <PeopleIcon />
                   </Nav.Link>
                 </div>
                 <div className="iconSpace ">
-                  <Nav.Link
-                    href="#memes"
-                    className="pl-2 iconBorder d-none d-sm-block d-lg-block"
-                  >
-                    <ChatBubbleIcon />
-                  </Nav.Link>
+                  <LinkContainer to="./Messanger">
+                    <Nav.Link
+                      className="pl-2 iconBorder d-none d-sm-block d-lg-block"
+                    >
+                      <ChatBubbleIcon />
+                    </Nav.Link>
+                  </LinkContainer> 
                 </div>
               </Nav>
             </div>
