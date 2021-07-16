@@ -5,12 +5,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Navbars from "../../Components/Navbars/Navbars";
 import Tooltip from "../../Components/Tooltip/Tooltip";
-import DatePicker from "../../Components/DatePicker/DatePicker"; 
+import DatePicker from "../../Components/DatePicker/DatePicker";
 import TimePicker from "../../Components/TimePicker/TimePicker";
 import DropdownTopicsMenu from "../../Components/DropdownTopicMenu/DropdownTopicsMenu";
 import { useState } from "react";
 import Popup from "../../Components/Popup/Popup";
 import { Button } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 function Weekly() {
   const [selected, setSelected] = useState(""); //for dropdown menu
 
@@ -30,15 +31,15 @@ function Weekly() {
           />
           <div className=" pt-5 mt-5 calender ">
             <h4 className=" d-flex justify-content-center">
-              Schedule your matches
+              Schedule your matches 
             </h4>
-            <div>
-              <Container>
+            <div> 
+              <Container> 
                 <Row className="container w-100 ">
                   <Col
                     lg={6}
                     col={12}
-                    sm={12}
+                    sm={12} 
                     className="d-flex justify-content-center pickers "
                   >
                     <DatePicker />
@@ -78,7 +79,7 @@ function Weekly() {
                     onClick={() => setButtonPopup(true)}
                   />
                   <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                    <h4>You're invited to Lunch!</h4>
+                    <h4>You're invited to Lunch!</h4> 
                     <p className="info">
                       We're running an exclusive beta for select Lunchclub
                       members in San Francisco Bay this week. Sign up for a 1:1
@@ -116,28 +117,38 @@ function Weekly() {
                     */}
 
                     {check ? (
-                      <Button variant="primary" size="lg" className="popupBtn">
-                        I'm in!
-                      </Button>
+                      <LinkContainer to="/Invite">
+                        <Button
+                          variant="primary"
+                          size="lg"
+                          className="popupBtn"
+                        >
+                          I'm in!
+                        </Button>
+                      </LinkContainer>
                     ) : (
-                      <Button
-                        variant="primary"
-                        size="lg"
-                        className="popupBtn info"
-                        disabled
-                      >
-                        I'm in!
-                      </Button>
+                      <LinkContainer to="/Invite">
+                        <Button
+                          variant="primary"
+                          size="lg"
+                          className="popupBtn info"
+                          disabled
+                        >
+                          I'm in!
+                        </Button> 
+                      </LinkContainer>
                     )}
                     <br />
                     <br />
-                    <Button
-                      variant="outline-primary"
-                      size="lg"
-                      className="popupBtn info"
-                    >
-                      Not this week
-                    </Button>
+                    <LinkContainer to="/Invite">
+                      <Button
+                        variant="outline-primary"
+                        size="lg"
+                        className="popupBtn info"
+                      >
+                        Not this week
+                      </Button>
+                    </LinkContainer> 
                   </Popup>
                 </div>
               </Container>

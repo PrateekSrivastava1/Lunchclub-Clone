@@ -1,0 +1,42 @@
+.ConnectionAnalysisBody {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(226, 228, 229, 0.521);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.netScore{
+  background-color: rgb(241, 159, 6);
+  color: white;
+  border-radius: 5px;
+}
+.netMeetingScore{
+  color: black;
+}
+.ConnectionAnalysisBody:hover{
+background-color: lightgray;
+}
+.underlineEffects {
+  display: inline-block; 
+  position: relative;
+  color: rgb(69, 106, 221);
+}
+
+.underlineEffects:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(54, 97, 224);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+.underlineEffects:hover:after {
+  transform: scaleX(1);
+  transform-origin: center ;
+}

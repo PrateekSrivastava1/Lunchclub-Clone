@@ -30,7 +30,7 @@ function Messenger() {
                     "https://img.icons8.com/color/48/000000/user-male-skin-type-5.png"
                   }
                 />
-                <Conversation
+                <Conversation 
                   Name={"Pranjal"}
                   DP={
                     "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"

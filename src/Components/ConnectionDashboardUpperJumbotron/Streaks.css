@@ -1,0 +1,8 @@
+.streaksBody{
+    height: 80px;
+    background-color: rgba(226, 228, 229, 0.521);
+    border-radius: 5px;
+}
+.streaksContent{
+    padding: 10px;
+} 

@@ -68,9 +68,11 @@ function Navbars() {
                   </LinkContainer>
                 </div>
                 <div className="iconSpace ">
-                  <Nav.Link className="pl-2 iconBorder d-sm-none d-md-block">
-                    <PeopleIcon />
-                  </Nav.Link>
+                  <LinkContainer to="./Connection">
+                    <Nav.Link className="pl-2 iconBorder d-sm-none d-md-block">
+                      <PeopleIcon />
+                    </Nav.Link>
+                  </LinkContainer>
                 </div>
                 <div className="iconSpace ">
                   <LinkContainer to="./Messenger">
