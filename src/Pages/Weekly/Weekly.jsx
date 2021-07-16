@@ -3,14 +3,13 @@ import "./Weekly.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Navbars from "./Navbars";
-import Tooltip from "./Tooltip";
-import DatePicker from "./DatePicker";
-import TimePicker from "./TimePicker";
-import DropdownTopicsMenu from "./DropdownTopicsMenu";
+import Navbars from "../../Components/Navbars/Navbars";
+import Tooltip from "../../Components/Tooltip/Tooltip";
+import DatePicker from "../../Components/DatePicker/DatePicker"; 
+import TimePicker from "../../Components/TimePicker/TimePicker";
+import DropdownTopicsMenu from "../../Components/DropdownTopicMenu/DropdownTopicsMenu";
 import { useState } from "react";
-import Popup from "./Popup";
-import Checkbox from "@material-ui/core/Checkbox";
+import Popup from "../../Components/Popup/Popup";
 import { Button } from "react-bootstrap";
 function Weekly() {
   const [selected, setSelected] = useState(""); //for dropdown menu
@@ -21,7 +20,7 @@ function Weekly() {
   return (
     <>
       <div className="body">
-        <div className=" container-fluid">
+        <div className=" container-fluid ">
           <Navbars />
           <Tooltip
             image="https://lunchclub.com/static/media/clippy.f759b687.svg"
@@ -29,7 +28,7 @@ function Weekly() {
             ptag="Sign up for your first match this
           week."
           />
-          <div className="container w-auto h-100 pt-5 mt-5  calender ">
+          <div className=" pt-5 mt-5 calender ">
             <h4 className=" d-flex justify-content-center">
               Schedule your matches
             </h4>
@@ -80,7 +79,7 @@ function Weekly() {
                   />
                   <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                     <h4>You're invited to Lunch!</h4>
-                    <p className="info"> 
+                    <p className="info">
                       We're running an exclusive beta for select Lunchclub
                       members in San Francisco Bay this week. Sign up for a 1:1
                       in-person meeting!
@@ -115,7 +114,7 @@ function Weekly() {
                     {/* I'm in button will be disabled if checkbox will not be checked 
                       checking checkbox is checked or not using ternary operator
                     */}
-                    
+
                     {check ? (
                       <Button variant="primary" size="lg" className="popupBtn">
                         I'm in!
@@ -132,7 +131,11 @@ function Weekly() {
                     )}
                     <br />
                     <br />
-                    <Button variant="outline-primary" size="lg" className="popupBtn info">
+                    <Button
+                      variant="outline-primary"
+                      size="lg"
+                      className="popupBtn info"
+                    >
                       Not this week
                     </Button>
                   </Popup>

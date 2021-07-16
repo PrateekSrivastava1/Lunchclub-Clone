@@ -1,19 +1,19 @@
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-import SignIn from "./Components/SignIn";
-import Home from "./Components/Home";
-import weekly from "./Components/Weekly";
-import Invite from "./Components/Invite";
-import Messenger from "./Components/ChatRoom/Messenger";
+import Home from "./Pages/Home/Home";
+import weekly from "./Pages/Weekly/Weekly";
+import Invite from "./Pages/Invite/Invite";
+import SignIn from "./Pages/SignIn/SignIn";
+import Messenger from "./Pages/ChatRoom/Messenger";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle";
+import "bootstrap/dist/js/bootstrap.bundle"; 
 function App() {
   return (
     <>
       <Switch>
         <Route path="/signin" component={SignIn} exact />
         <Route path="/weekly" component={weekly} exact />
-        <Route path="/Invite" component={Invite} exact />
+        <Route path="/Invite" component={Invite} exact /> 
         <Route path="/Messenger" component={Messenger} exact />
         <Route path="/" component={Home} exact />
       </Switch>

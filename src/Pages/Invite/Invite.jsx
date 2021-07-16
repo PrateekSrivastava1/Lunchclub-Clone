@@ -1,17 +1,17 @@
 import { React, useState } from "react";
-import Navbars from "./Navbars";
+import Navbars from "../../Components/Navbars/Navbars";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+import Row from "react-bootstrap/Row"; 
 import Col from "react-bootstrap/Col";
 import "./Invite.css";
-import InviteMessageTextBox from "./InviteMessageTextBox";
-import InstagramShareLinkBox from "./InstagramShareLinkBox";
+import InviteMessageTextBox from "../../Components/InviteMessageTextBox/InviteMessageTextBox";
+import InstagramShareLinkBox from "../../Components/SocialmediaShareLinkBox/Instagram/InstagramShareLinkBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faFacebook,
-  faLinkedin,
+  faLinkedin, 
 } from "@fortawesome/free-brands-svg-icons";
 function Invite() {
   const [link, setLink] = useState(

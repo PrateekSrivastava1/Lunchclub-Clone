@@ -1,9 +1,9 @@
 import React from "react";
-import Navbars from "../Navbars";
+import Navbars from "../../Components/Navbars/Navbars"
 import "./Messenger.css";
-import Conversation from "../Conversations/Conversation";
-import Message from "../Messages/Message";
-import ChatOnline from "../ChatOnline/ChatOnline";
+import Conversation from "../../Components/Conversations/Conversation";
+import Message from "../../Components/Messages/Message";
+import ChatOnline from "../../Components/ChatOnline/ChatOnline";
 function Messenger() {
   return (
     <>

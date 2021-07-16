@@ -2,10 +2,17 @@
   background-color: rgba(226, 228, 229, 0.315);
   height: 950px;
 }
+.containerBody{
+  display: flex;
+  align-items: center;
+}
+
 .calender {
   border-radius: 5px;
   background-color: white;
   border: 1px solid rgb(219, 218, 218);
+  width: 800px;
+  margin: auto;
 }
 .pickers {
   border: 1px solid rgb(219, 218, 218);
@@ -24,7 +31,7 @@
   .popupBtn {
     width: 70%;
   }
-  .calender{
+  .calender {
     width: auto;
   }
 }

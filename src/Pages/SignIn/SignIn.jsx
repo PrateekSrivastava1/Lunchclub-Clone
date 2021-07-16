@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./SignIn.css";
 import { Button } from "react-bootstrap";
-import ImageShow from "./ImageShow";
+import ImageShow from "../../Components/ImageShow/ImageShow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import {
@@ -146,7 +146,7 @@ function SignIn() {
             />
             <FontAwesomeIcon
               className="m-2 fa-lg text-primary"
-              icon={faLinkedin}
+              icon={faLinkedin}  
             />
           </Col>
           <Col lg={4} col={4} sm={4} className="d-flex justify-content-end">

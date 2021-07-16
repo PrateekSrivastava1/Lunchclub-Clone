@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
-import "../Components/Navbars.css";
-import { Link } from "react-router-dom";
+import "./Navbars.css";
 import { LinkContainer } from "react-router-bootstrap";
 // ----------------------------Material UI icons---------------------------
 import HomeIcon from "@material-ui/icons/Home";
@@ -11,7 +10,7 @@ import PeopleIcon from "@material-ui/icons/People";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 // -------------------------------------------------------------------------
 
-import { Form, FormControl, Nav, NavLink } from "react-bootstrap";
+import { Form, FormControl, Nav } from "react-bootstrap";
 
 function Navbars() {
   return (
@@ -28,7 +27,7 @@ function Navbars() {
           </Navbar.Brand>
         </div>
         <div className="iconSpace d-sm-block d-lg-none text-left">
-          <Nav.Link href="#memes" className="pl-2 iconBorder ">
+          <Nav.Link href="#" className="pl-2 iconBorder ">
             <ChatBubbleIcon />
           </Nav.Link>
         </div>
@@ -45,12 +44,14 @@ function Navbars() {
             <div className="hideNav ">
               <Nav className="ms-auto ">
                 <div className="iconSpace ">
-                  <Nav.Link
-                    href="#features"
-                    className="p-2 iconBorder d-sm-none d-md-block"
-                  >
-                    <HomeIcon />
-                  </Nav.Link>
+                  <LinkContainer to="/">
+                    <Nav.Link
+                      href="#features"
+                      className="p-2 iconBorder d-sm-none d-md-block"
+                    >
+                      <HomeIcon />
+                    </Nav.Link>
+                  </LinkContainer>
                 </div>
                 <div className="iconSpace  ">
                   <LinkContainer to="../Weekly">
@@ -61,28 +62,22 @@ function Navbars() {
                 </div>
                 <div className="iconSpace ">
                   <LinkContainer to="../Invite">
-                    <Nav.Link
-                      className="pl-2 iconBorder d-sm-none d-md-block"
-                    >
+                    <Nav.Link className="pl-2 iconBorder d-sm-none d-md-block">
                       <MailOutlineIcon />
                     </Nav.Link>
                   </LinkContainer>
                 </div>
                 <div className="iconSpace ">
-                  <Nav.Link
-                    className="pl-2 iconBorder d-sm-none d-md-block"
-                  >
+                  <Nav.Link className="pl-2 iconBorder d-sm-none d-md-block">
                     <PeopleIcon />
                   </Nav.Link>
                 </div>
                 <div className="iconSpace ">
-                  <LinkContainer to="./Messenger"> 
-                    <Nav.Link
-                      className="pl-2 iconBorder d-none d-sm-block d-lg-block"
-                    >
+                  <LinkContainer to="./Messenger">
+                    <Nav.Link className="pl-2 iconBorder d-none d-sm-block d-lg-block">
                       <ChatBubbleIcon />
                     </Nav.Link>
-                  </LinkContainer> 
+                  </LinkContainer>
                 </div>
               </Nav>
             </div>

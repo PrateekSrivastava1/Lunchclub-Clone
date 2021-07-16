@@ -1,7 +1,7 @@
 import React from "react";
-import Image1 from "../SignInPageImages/Image1.svg";
-import Image2 from "../SignInPageImages/Image2.svg";
-import Image3 from "../SignInPageImages/Image3.svg";
+import Image1 from "/lunch-club-clone/src/SignInPageImages/Image1.svg";
+import Image2 from "/lunch-club-clone/src/SignInPageImages/Image2.svg";
+import Image3 from "/lunch-club-clone/src/SignInPageImages/Image3.svg";
 
 function ImageShow() {
   window.onload = () => {

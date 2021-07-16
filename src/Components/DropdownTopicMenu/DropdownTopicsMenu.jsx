@@ -2,7 +2,6 @@ import React from "react";
 import "./DropdownTopicsMenu.css";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
-import SmsIcon from '@material-ui/icons/Sms';
 import { useState } from "react";
 function DropdownTopicsMenu(selected, setSelected) {
   const [isActive, setIsActive] = useState(false);

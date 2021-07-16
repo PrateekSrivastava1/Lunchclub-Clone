@@ -56,19 +56,9 @@ export default function MaterialUIPickers() {
           max={endDate}
           onChange={handleDateChange}
           KeyboardButtonProps={{
-            "aria-label": "change date",
+            "aria-label": "change date", 
           }}
         />
-        {/* <KeyboardTimePicker
-          margin="normal"
-          id="time-picker"
-          label="Time picker"
-          value={selectedDate}
-          onChange={handleDateChange}
-          KeyboardButtonProps={{
-            'aria-label': 'change time',
-          }}
-        /> */}
       </Grid>
     </MuiPickersUtilsProvider>
   );
