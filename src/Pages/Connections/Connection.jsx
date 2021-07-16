@@ -70,11 +70,21 @@ function Connection() {
               <div className="container mt-2 ">
                   <Sortby />
                   <br /> <br /> 
-                <MostConnectedPeople />
-                <MostConnectedPeople />
-                <MostConnectedPeople />
-                <MostConnectedPeople />
-                <MostConnectedPeople />
+                <MostConnectedPeople 
+                Name={"Prateek"}
+                Score={850}
+                Profile={"https://lunchclub.com/static/media/default-picture.90b9161a.svg"}
+                />
+                <MostConnectedPeople 
+                Name={"Pranjal"}
+                Score={950}
+                Profile={"https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"}
+                />
+                <MostConnectedPeople 
+                Name={"Nitin"}
+                Score={1101}
+                Profile={"https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"}
+                />
               </div>
             </div>
           </div>
