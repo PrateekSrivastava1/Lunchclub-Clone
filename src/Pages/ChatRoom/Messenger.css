@@ -39,21 +39,26 @@
   overflow-y: scroll;
   padding-right: 10px;
 }
+
+.chatBoxTop::-webkit-scrollbar {
+  display: none;
+}
+
 .chatMessageInput {
   width: 80%;
-  height: 60px;
+  height: 50px;
   padding: 10px;
   border-radius: 5px;
   resize: none;
   border: 1px solid lightgray;
 }
-.chatBoxButtom { 
+.chatBoxButtom {
   margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.chatSubmitButton { 
+.chatSubmitButton {
   width: 70px;
   height: 40px;
   border: none;
@@ -74,9 +79,9 @@
     display: none;
   }
   .chatBox {
-    flex: 12; 
+    flex: 12;
   }
-  .messenger { 
+  .messenger {
     margin-left: 10px;
     margin-right: 10px;
   }

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .connectionMainBody {
   background-color: rgba(226, 228, 229, 0.315);
-  height: 1300px; 
+  height: 1500px; 
 }
 .heading{
   font-family: 'Roboto', sans-serif;
@@ -11,7 +11,7 @@
   margin-top: 40px;
   margin-left: 320px;
 } 
-.connectionBody {
+.connectionBody { 
   border-radius: 5px;
   background-color: white;
   border: 1px solid rgb(219, 218, 218);

@@ -1,18 +1,20 @@
 import { React, useState } from "react";
-import Navbars from "../../Components/Navbars/Navbars";
-import { Link } from "react-router-dom";
+import "./Invite.css";
+
+// React Bootstrap components
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row"; 
 import Col from "react-bootstrap/Col";
-import "./Invite.css";
+
+// components
+import Navbars from "../../Components/Navbars/Navbars";
 import InviteMessageTextBox from "../../Components/InviteMessageTextBox/InviteMessageTextBox";
 import InstagramShareLinkBox from "../../Components/SocialmediaShareLinkBox/Instagram/InstagramShareLinkBox";
+
+// fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTwitter,
-  faFacebook,
-  faLinkedin, 
-} from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faFacebook, faLinkedin, } from "@fortawesome/free-brands-svg-icons";
+
 function Invite() {
   const [link, setLink] = useState(
     "Excited to be networking on @lunchclubai! Use my invite link to skip the waitlist and meet interesting people: https://lunchclub.com/?invite_code=prateeks23&ref=twitter"
@@ -109,7 +111,7 @@ function Invite() {
                           "Excited to be networking on @lunchclubai! Use my invite link to skip the waitlist and meet interesting people: https://lunchclub.com/?invite_code=prateeks23&ref=twitter"
                         );
                       }}
-                    />
+                    /> 
                     <FontAwesomeIcon
                       className="m-2 fa-lg text-primary"
                       icon={faLinkedin}

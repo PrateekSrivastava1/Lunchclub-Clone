@@ -1,15 +1,15 @@
 import React from "react";
 import "./ChatOnline.css";
-function ChatOnline(props) {
+function ChatOnline({DP, Name}) {
   return ( 
-    <div className="div">
+    <div >
       <div className="chatonline">
         <img
           className="chatonlineImg"
-          src={props.DP} 
+          src={DP} 
           alt=""
         />
-        <span className="chatonlineName"> {props.Name} </span>
+        <span className="chatonlineName"> {Name} </span>
       </div>
       <div className="chatonlineTime info">Met on Jun 25 2021</div>
     </div>

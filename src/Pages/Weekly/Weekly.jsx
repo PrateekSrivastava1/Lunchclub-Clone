@@ -12,7 +12,7 @@ import { useState } from "react";
 import Popup from "../../Components/Popup/Popup";
 import { Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-function Weekly() {
+function Weekly() { 
   const [selected, setSelected] = useState(""); //for dropdown menu
 
   const [buttonPopup, setButtonPopup] = useState(false); // for popup

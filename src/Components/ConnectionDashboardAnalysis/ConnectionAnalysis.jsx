@@ -1,6 +1,6 @@
 import React from "react";
 import "./ConnectionAnalysis.css";
-function ConnectionAnalysis(props) {
+function ConnectionAnalysis({networkScore, InspiredMeetings, boolNetworkScore, boolInspiredMeetings, SuperInvesters}) {
   return (
     <div className="ConnectionAnalysisBody"> 
     
@@ -8,15 +8,15 @@ function ConnectionAnalysis(props) {
         {/*if boolInspiredMeetings props is true then we will show netMeetingScore  */} 
         {/* if SuperInvesters props is true then we will show emoji */}  
     {
-        (props.boolNetworkScore && (<p className="info">Your network score <strong className="netScore">{props.networkScore}</strong></p>))||
-        (props.boolInspiredMeetings && (<p className="info">You Inspired <strong className="netMeetingScore">{props.InspiredMeetings} Meetings</strong></p>)) ||
-        (props.SuperInvesters && (<p className="info">Superinviters 🎉</p>))
+        (boolNetworkScore && (<p className="info">Your network score <strong className="netScore">{networkScore}</strong></p>))||
+        (boolInspiredMeetings && (<p className="info">You Inspired <strong className="netMeetingScore">{InspiredMeetings} Meetings</strong></p>)) ||
+        (SuperInvesters && (<p className="info">Superinviters 🎉</p>))
     }
       
     {
-        (props.boolNetworkScore && (<strong className="underlineEffects">See breakdown</strong>))||
-        (props.boolInspiredMeetings && (<strong className="underlineEffects">View analysis</strong>)) ||
-        (props.SuperInvesters && (<strong className="underlineEffects">Look at the list</strong>))
+        (boolNetworkScore && (<strong className="underlineEffects">See breakdown</strong>))||
+        (boolInspiredMeetings && (<strong className="underlineEffects">View analysis</strong>)) ||
+        (SuperInvesters && (<strong className="underlineEffects">Look at the list</strong>))
     }
     </div>
   );

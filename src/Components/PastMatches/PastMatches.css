@@ -1,0 +1,29 @@
+.PastMatchesBody{
+    margin: 30px;
+}
+.PastMatchesProfile{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.PastMatchesName:hover{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.chatonlineImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.PastMatchesName{
+    font-weight: 800;
+}
+.PastMatchesTime{
+    font-size: 12px;
+  margin-bottom: 5px;
+}
+.privateNoteBox{
+    display: flex;
+    justify-content: center;
+}

@@ -1,14 +1,14 @@
 import React from "react";
 import "./Conversation.css";
-function Conversation(props) {
+function Conversation({DP, Name}) {
   return (
     <div className="conversation">
       <img
         className="conversationImg"
-        src={props.DP}
+        src={DP}
         alt=""
       />
-      <span className="conversationName"> {props.Name} </span>
+      <span className="conversationName"> {Name} </span>
     </div>
   );
 } 
