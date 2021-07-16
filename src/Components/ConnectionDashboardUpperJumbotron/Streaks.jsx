@@ -17,11 +17,11 @@ function Streaks(props) {
             </span>
           </div>
           <div className="statusTitle">
-            {(props.boolMeeting && (
-              <div className="info">Total meetings</div>
-            )) ||
+            {
+              (props.boolMeeting && (<div className="info">Total meetings</div>)) ||
               (props.boolStreak && <div className="info">Week streak</div>) ||
-              (props.boolClubpoint && <div className="info">Clubpoints</div>)} 
+              (props.boolClubpoint && <div className="info">Clubpoints</div>)
+            } 
             {/*if boolMeeting props is true then we will show meetings statusTitle*/}
             {/*if boolStreak props is true then we will show Streak statusTitle */}
             {/* if boolClubpoint props is true then we will show Clubpoints statusTitle */}

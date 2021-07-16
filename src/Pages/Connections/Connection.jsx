@@ -1,16 +1,20 @@
 import React from "react";
+import "./Connection.css";
 import Navbars from "../../Components/Navbars/Navbars";
 import Streaks from "../../Components/ConnectionDashboardUpperJumbotron/Streaks";
-import "./Connection.css";
+import Sortby from "../../Components/Sortby/Sortby";
 import ConnectionAnalysis from "../../Components/ConnectionDashboardAnalysis/ConnectionAnalysis";
+import MostConnectedPeople from "../../Components/MostConnectedPeople/MostConnectedPeople";
+
 function Connection() {
   return (
-    <div>
+    <div >
       <Navbars />
-      <div className="body pt-5">
+      <div className="connectionMainBody pt-5">
         <div className=" container-fluid ">
           <Navbars />
-          <div className="mt-5 connectionBody">
+          <h4 className="connectionHeading">Connection stats</h4>
+          <div className="connectionBody heading">
             <div className="container ">
               <div className="row container containerRow">
                 <div className="col-lg-3 col-sm-3 mb-2">
@@ -20,7 +24,7 @@ function Connection() {
                     alt=""
                   />
                   <span>
-                    <strong>Prateek Pandey</strong>
+                    <strong className="heading">Prateek Pandey</strong>
                   </span>
                 </div>
                 <div className="col-lg-3 col-sm-9 mb-2">
@@ -51,18 +55,26 @@ function Connection() {
                   />
                 </div>
               </div>
-              <div className="container">
-                <ConnectionAnalysis 
-                networkScore={500}
-                boolNetworkScore={true} 
+              <div className="container analysisContainer">
+                <ConnectionAnalysis
+                  networkScore={500}
+                  boolNetworkScore={true}
                 />
                 <ConnectionAnalysis
-                InspiredMeetings={0}
-                boolInspiredMeetings={true}
+                  InspiredMeetings={0}
+                  boolInspiredMeetings={true}
                 />
-                <ConnectionAnalysis 
-                SuperInvesters={true} 
-                />
+                <ConnectionAnalysis SuperInvesters={true} />
+                <h5 className="heading">Most connected in your network</h5>
+              </div>
+              <div className="container mt-2 ">
+                  <Sortby />
+                  <br /> <br /> 
+                <MostConnectedPeople />
+                <MostConnectedPeople />
+                <MostConnectedPeople />
+                <MostConnectedPeople />
+                <MostConnectedPeople />
               </div>
             </div>
           </div>

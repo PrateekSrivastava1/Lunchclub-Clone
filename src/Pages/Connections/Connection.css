@@ -1,9 +1,22 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.connectionMainBody {
+  background-color: rgba(226, 228, 229, 0.315);
+  height: 1300px; 
+}
+.heading{
+  font-family: 'Roboto', sans-serif;
+}
+.connectionHeading{
+  margin-top: 40px;
+  margin-left: 320px;
+} 
 .connectionBody {
   border-radius: 5px;
   background-color: white;
   border: 1px solid rgb(219, 218, 218);
   width: 700px;
-  margin: auto;
+  margin: auto; 
 }
 .containerRow {
   padding-top: 30px;
@@ -20,8 +33,14 @@
 .connectionImage {
   height: 80px;
 }
+.analysisContainer{
+  border-bottom: 1px solid rgb(219, 218, 218);;
+}
 @media only screen and (max-width: 600px) {
   .connectionBody {
     width: auto;
+  }
+  .connectionHeading{
+    margin-left: auto;
   }
 }

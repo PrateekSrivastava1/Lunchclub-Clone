@@ -1,0 +1,13 @@
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.sortbyBody{
+    float:right;
+}
+.sortLabel{
+    margin-right: 10px;
+}
+.sortDropdownBody{
+    border: none; 
+    cursor: pointer;
+}
