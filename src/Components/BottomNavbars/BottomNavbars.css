@@ -1,0 +1,9 @@
+/* .BottomNavv{
+    display: none;
+} */
+
+@media only screen and (max-width: 600px){
+    /* .BottomNavv{
+        display: block;
+    } */
+} 

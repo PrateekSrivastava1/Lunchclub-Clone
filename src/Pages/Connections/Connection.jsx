@@ -29,7 +29,6 @@ function Connection() {
       <Navbars />
       <div className="connectionMainBody pt-5">
         <div className=" container-fluid">
-          <Navbars />
           <h4 className="connectionHeading heading">Connection stats</h4>
           <div className="connectionBody ">
             <div className="container ">
@@ -39,7 +38,7 @@ function Connection() {
                     className="connectionImage"
                     src="https://lunchclub.com/static/media/default-picture.90b9161a.svg"
                     alt=""
-                  />
+                  /> 
                   <span>
                     <strong className="heading">Prateek Pandey</strong>
                   </span>

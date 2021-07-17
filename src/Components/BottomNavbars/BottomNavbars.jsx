@@ -1,8 +1,9 @@
 import React from "react";
-import "./Navbars.css";
+import "./BottomNavbars.css";
+
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
-import { Form, FormControl, Nav } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 // ----------------------------Material UI icons---------------------------
 import HomeIcon from "@material-ui/icons/Home";
@@ -10,51 +11,15 @@ import EventIcon from "@material-ui/icons/Event";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PeopleIcon from "@material-ui/icons/People";
 import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
-import SearchIcon from "@material-ui/icons/Search";
 // -------------------------------------------------------------------------
 
-function Navbars() {
+function BottomNavbars() {
   return (
-    <div className="container-fluid fixed-top navBar">
+    <div className="container-fluid fixed-bottom BottomNavv navBar">
       <Navbar collapseOnSelect expand="lg">
-        <div className="brandSpace">
-          <LinkContainer to="/">
-            <Navbar.Brand>
-              <img
-                className="navImage"
-                width="150"
-                src="https://lunchclub.com/static/media/logo2.4c4b75fd.svg"
-                alt=""
-              />
-            </Navbar.Brand> 
-          </LinkContainer>
-        </div>
-        <div className="smallScreenNav">
-          <div className="iconSpace smallScreenNavBody">
-            <LinkContainer to="../Messenger">
-              <Nav.Link className=" iconBorder navMsg">
-                <ChatBubbleIcon />
-              </Nav.Link>
-            </LinkContainer>
-            <LinkContainer to="../">
-              <Nav.Link className=" iconBorder navMsg">
-                <SearchIcon />
-              </Nav.Link>
-            </LinkContainer>
-          </div>
-        </div>
-
-        <Form className="d-flex">
-          <FormControl
-            type="search"
-            placeholder="Search Lunchclub"
-            className="mr-2 d-none d-lg-block d-sm-none"
-            aria-label="Search"
-          />
-        </Form>
-        <div className="ms-auto  hideNav ">
+        <div className="ms-auto   ">
           <Navbar.Collapse id="responsive-navbar-nav">
-            <div className="hideNav ">
+            <div className=" ">
               <Nav className="ms-auto ">
                 <div className="iconSpace ">
                   <LinkContainer to="/">
@@ -124,4 +89,4 @@ function Navbars() {
   );
 }
 
-export default Navbars;
+export default BottomNavbars;

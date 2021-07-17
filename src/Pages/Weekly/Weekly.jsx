@@ -73,7 +73,7 @@ function Weekly() {
                 </Row>
                 <div className="container pb-5 ">
                   <input
-                    class="btn btn-primary"
+                    className="btn btn-primary"
                     type="submit"
                     value="Pass for a week"
                     onClick={() => setButtonPopup(true)}

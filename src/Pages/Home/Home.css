@@ -1,0 +1,11 @@
+.HomeMainBody {
+  background-color: rgba(226, 228, 229, 0.315);
+  height: auto;
+}
+.scrollBody {
+  height: 800px;
+  overflow-y: scroll;
+}
+.scrollBody::-webkit-scrollbar {
+  display: none;
+}

@@ -1,26 +1,43 @@
-.navBar{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
-    background-color: white;
+.navBar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+  background-color: white;
 }
-.iconBorder{
-    border-radius: 50%;
-    background-color: rgb(229, 231, 231);
+.iconBorder {
+  border-radius: 50%;
+  background-color: rgb(229, 231, 231);
 }
-.profileIconBorder{
-    border-radius: 40%;
-    background-color: rgb(229, 231, 231);
+.profileIconBorder {
+  border-radius: 40%;
+  background-color: rgb(229, 231, 231);
 }
 
 /* to give space between icons */
-.iconSpace{
-    padding-right: 10px;
+.iconSpace {
+  padding-right: 10px;
 }
-.profileIconSpace{
-    padding-right: 30px;
+.profileIconSpace {
+  padding-right: 30px;
 }
-.brandSpace{
-    padding-left: 30px;
+.brandSpace {
+  padding-left: 30px;
 }
-.navImage{
-    height: 30px;
+.navImage {
+  height: 30px;
+}
+.smallScreenNav {
+  display: none;
+}
+.smallScreenNavBody {
+  display: flex;
+}
+.navMsg {
+  margin-left: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .hideNav {
+    display: none;
+  }
+  .smallScreenNav {
+    display: block;
+  }
 }
