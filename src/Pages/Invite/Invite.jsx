@@ -8,12 +8,14 @@ import Col from "react-bootstrap/Col";
 
 // components
 import Navbars from "../../Components/Navbars/Navbars";
+import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
 import InviteMessageTextBox from "../../Components/InviteMessageTextBox/InviteMessageTextBox";
 import InstagramShareLinkBox from "../../Components/SocialmediaShareLinkBox/Instagram/InstagramShareLinkBox";
 
 // fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faFacebook, faLinkedin, } from "@fortawesome/free-brands-svg-icons";
+
 
 function Invite() {
   const [link, setLink] = useState(
@@ -53,7 +55,7 @@ function Invite() {
                 </div>
               </Col>
               <Col lg={6} sm={12}>
-                <div className="inputRowButton">
+                <div className="inputRowButton"> 
                   <input
                     className="p-2 mb-3 inviteInputButton"
                     type="button"
@@ -109,8 +111,8 @@ function Invite() {
                       onClick={(e) => {
                         setLink(
                           "Excited to be networking on @lunchclubai! Use my invite link to skip the waitlist and meet interesting people: https://lunchclub.com/?invite_code=prateeks23&ref=twitter"
-                        );
-                      }}
+                        ); 
+                      }} 
                     /> 
                     <FontAwesomeIcon
                       className="m-2 fa-lg text-primary"
@@ -133,6 +135,7 @@ function Invite() {
             </Row>
           </div>
         </Container>
+        <BottomNavbars/>
       </div>
     </>
   );

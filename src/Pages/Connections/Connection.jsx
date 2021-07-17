@@ -1,6 +1,7 @@
 import React from "react";
 import "./Connection.css";
 import Navbars from "../../Components/Navbars/Navbars";
+import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
 import Streaks from "../../Components/ConnectionDashboardUpperJumbotron/Streaks";
 import Sortby from "../../Components/Sortby/Sortby";
 import ConnectionAnalysis from "../../Components/ConnectionDashboardAnalysis/ConnectionAnalysis";
@@ -25,20 +26,20 @@ function createPastMatchesEntry({ id, Name, Time, About }) {
 
 function Connection() {
   return (
-    <div>
+    <>
       <Navbars />
       <div className="connectionMainBody pt-5">
         <div className=" container-fluid">
           <h4 className="connectionHeading heading">Connection stats</h4>
           <div className="connectionBody ">
             <div className="container ">
-              <div className="row container containerRow"> 
+              <div className="row container containerRow">
                 <div className="col-lg-3 col-sm-3 mb-2">
                   <img
                     className="connectionImage"
                     src="https://lunchclub.com/static/media/default-picture.90b9161a.svg"
                     alt=""
-                  /> 
+                  />
                   <span>
                     <strong className="heading">Prateek Pandey</strong>
                   </span>
@@ -78,7 +79,7 @@ function Connection() {
                 />
                 <ConnectionAnalysis
                   InspiredMeetings={0}
-                  boolInspiredMeetings={true} 
+                  boolInspiredMeetings={true}
                 />
                 <ConnectionAnalysis SuperInvesters={true} />
                 <h5 className="heading">Most connected in your network</h5>
@@ -97,7 +98,8 @@ function Connection() {
           {PastMatchesData.map(createPastMatchesEntry)}
         </div>
       </div>
-    </div>
+      <BottomNavbars />
+    </>
   );
 }
 

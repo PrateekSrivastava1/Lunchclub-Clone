@@ -1,5 +1,6 @@
 import React from "react";
 import Navbars from "../../Components/Navbars/Navbars";
+import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
 import "./Messenger.css";
 import Conversation from "../../Components/Conversations/Conversation";
 import Message from "../../Components/Messages/Message";
@@ -26,7 +27,7 @@ function Messenger() {
       <div className="messengerBody ">
         <div className=" messengerContainer">
           <div className="messenger ">
-            <div className="chatMenu">
+            <div className="chatMenu"> 
               <div className="chatMenuWrapper">
                 <input
                   placeholder="Search for friend"
@@ -60,6 +61,7 @@ function Messenger() {
                     placeholder="Type Something here..."
                   ></textarea>
                   <button className="chatSubmitButton">Send</button>
+                 
                 </div>
               </div>
             </div>

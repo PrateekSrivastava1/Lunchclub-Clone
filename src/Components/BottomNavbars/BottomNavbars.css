@@ -1,9 +1,11 @@
-/* .BottomNavv{
+.BottomNavv{
     display: none;
-} */
-
+}
+.bottomNaviconSpace {
+    padding-right: 15px;
+  }
 @media only screen and (max-width: 600px){
-    /* .BottomNavv{
+    .BottomNavv{
         display: block;
-    } */
+    }
 } 

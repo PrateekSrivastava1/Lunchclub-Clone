@@ -1,22 +1,35 @@
-.ConnectionAnalysisBody {
+.profileViewBody {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(226, 228, 229, 0.521);
+  width: 270px;
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 5px;
+  margin: 0px 5px 0px 5px;
+  /* border-radius: 5px; */
   margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
 }
-.ConnectionAnalysisBody:hover {
-  background-color: lightgray;
+/* list items ~options */ 
+.options {
+  border-radius: 5px;
+  width: 250px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 0px 5px 0px 5px;
+}
+.profileViewBody:hover,
+.options:hover {
   cursor: pointer;
+  background-color: lightgray;
 }
 .netScore {
   background-color: rgb(241, 159, 6);
   color: white;
   border-radius: 5px;
 }
-.netMeetingScore {
-  color: black;
+.scoreIcon {
+  color: rgb(241, 159, 6);
 }
 
 /* underline animation part */

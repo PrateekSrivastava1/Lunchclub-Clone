@@ -1,17 +1,20 @@
-import React from "react";
+import { React, useState } from "react";
 import "./Weekly.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Navbars from "../../Components/Navbars/Navbars";
+import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
 import Tooltip from "../../Components/Tooltip/Tooltip";
 import DatePicker from "../../Components/DatePicker/DatePicker";
 import TimePicker from "../../Components/TimePicker/TimePicker";
 import DropdownTopicsMenu from "../../Components/DropdownTopicMenu/DropdownTopicsMenu";
-import { useState } from "react";
 import Popup from "../../Components/Popup/Popup";
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import { Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+
+
 function Weekly() { 
   const [selected, setSelected] = useState(""); //for dropdown menu
 
@@ -78,6 +81,9 @@ function Weekly() {
                     value="Pass for a week"
                     onClick={() => setButtonPopup(true)}
                   />
+
+                  {/* popup component */}
+
                   <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                     <h4>You're invited to Lunch!</h4> 
                     <p className="info">
@@ -85,29 +91,17 @@ function Weekly() {
                       members in San Francisco Bay this week. Sign up for a 1:1
                       in-person meeting!
                     </p>
-                    <img
-                      src="https://lunchclub.com/static/media/in-person.3473786f.svg"
-                      alt=""
-                    />
+                    <img src="https://lunchclub.com/static/media/in-person.3473786f.svg" alt=""/>
                     <p>
-                      <img
-                        src="https://lunchclub.com/static/media/location-irl.c9f27c9c.svg"
-                        alt=""
-                      />
+                      <img src="https://lunchclub.com/static/media/location-irl.c9f27c9c.svg" alt=""/>
                       <strong className="info"> SoMa, San Francisco Bay</strong>
                     </p>
                     <p>
-                      <img
-                        src="https://lunchclub.com/static/media/calendar-irl.0f799e30.svg"
-                        alt=""
-                      />
+                      <img src="https://lunchclub.com/static/media/calendar-irl.0f799e30.svg" alt=""/>
                       <strong className="info"> Friday, July 16th, 12pm</strong>
                     </p>
                     <p className="info">
-                      <input
-                        type="checkbox"
-                        onClick={() => setCheckbox(!check)}
-                      />
+                      <input type="checkbox" onClick={() => setCheckbox(!check)} />
                       I am fully vaccinated and understand that this meeting is
                       in person.
                     </p>
@@ -125,7 +119,7 @@ function Weekly() {
                         >
                           I'm in!
                         </Button>
-                      </LinkContainer>
+                      </LinkContainer> 
                     ) : (
                       <LinkContainer to="/Invite">
                         <Button
@@ -154,9 +148,10 @@ function Weekly() {
               </Container>
             </div>
           </div>
+          <BottomNavbars/>
         </div>
       </div>
-    </>
+    </> 
   );
 }
 
