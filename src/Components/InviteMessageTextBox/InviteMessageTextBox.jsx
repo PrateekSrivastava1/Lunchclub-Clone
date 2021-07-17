@@ -38,9 +38,14 @@ function InviteMessageTextBox({ PastMatches }) {
             type="text"
             value={list.title}
             placeholder="The note below will be sent to all your invites."
+            placeholder={
+              PastMatches
+                ? "Send Updates"
+                : "The note below will be sent to all your invites."
+            }
             onChange={handleChange}
             onClick={Expanding}
-            value={list.title}
+            value={list.title} 
             disabled
           />
         ) : null}

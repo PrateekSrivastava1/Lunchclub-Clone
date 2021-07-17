@@ -6,6 +6,23 @@ import Sortby from "../../Components/Sortby/Sortby";
 import ConnectionAnalysis from "../../Components/ConnectionDashboardAnalysis/ConnectionAnalysis";
 import MostConnectedPeople from "../../Components/MostConnectedPeople/MostConnectedPeople";
 import PastMatches from "../../Components/PastMatches/PastMatches";
+
+// importing data from JsonData folder
+import MostConnnectedPeopleData from "../../JsonData/MostConnnectedPeopleData";
+import PastMatchesData from "../../JsonData/PastMatchesData";
+
+// passing all objects of MostConnnectedPeopleData array to MostConnectedPeople component
+function createConnectedPeopleEntry({ id, Name, Score, Profile }) {
+  return (
+    <MostConnectedPeople key={id} Name={Name} Score={Score} Profile={Profile} />
+  );
+}
+
+// passing all objects of PastMatchesData array to PastMatches component
+function createPastMatchesEntry({ id, Name, Time, About }) {
+  return <PastMatches key={id} Name={Name} Time={Time} About={About} />;
+}
+
 function Connection() {
   return (
     <div>
@@ -16,7 +33,7 @@ function Connection() {
           <h4 className="connectionHeading heading">Connection stats</h4>
           <div className="connectionBody ">
             <div className="container ">
-              <div className="row container containerRow">
+              <div className="row container containerRow"> 
                 <div className="col-lg-3 col-sm-3 mb-2">
                   <img
                     className="connectionImage"
@@ -62,7 +79,7 @@ function Connection() {
                 />
                 <ConnectionAnalysis
                   InspiredMeetings={0}
-                  boolInspiredMeetings={true}
+                  boolInspiredMeetings={true} 
                 />
                 <ConnectionAnalysis SuperInvesters={true} />
                 <h5 className="heading">Most connected in your network</h5>
@@ -70,49 +87,15 @@ function Connection() {
               <div className="container mt-2 ">
                 <Sortby />
                 <br /> <br />
-                <MostConnectedPeople
-                  Name={"Prateek"}
-                  Score={850}
-                  Profile={
-                    "https://lunchclub.com/static/media/default-picture.90b9161a.svg"
-                  }
-                />
-                <MostConnectedPeople
-                  Name={"Pranjal"}
-                  Score={950}
-                  Profile={
-                    "https://img.icons8.com/dusk/64/000000/user-male-skin-type-5.png"
-                  }
-                />
-                <MostConnectedPeople
-                  Name={"Nitin"}
-                  Score={1101}
-                  Profile={
-                    "https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
-                  }
-                />
+                {/* Here we are using mapping technique so that we can avoid writing code again and again. */}
+                {MostConnnectedPeopleData.map(createConnectedPeopleEntry)}
               </div>
             </div>
           </div>
           <h4 className="connectionHeading heading">Past matches</h4>
-          <div className="connectionBody ">
-            <PastMatches
-              Name={"Prateek Srivastava"}
-              Time={"Met on Jun 25 2021"}
-              About={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinction repellendus rerum hic necessitatibus quas non aut nesciunt at sit fugit."
-              }
-            />
-          </div>
-          <div className="connectionBody mt-2">
-            <PastMatches
-              Name={"Prateek Sharma"}
-              Time={"Met on Jun 27 2021"}
-              About={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinction repellendus rerum hic necessitatibus quas non aut nesciunt at sit fugit."
-              }
-            />
-          </div>
+          {/* Here we are using mapping technique so that we can avoid writing code again and again. */}
+
+          {PastMatchesData.map(createPastMatchesEntry)}
         </div>
       </div>
     </div>

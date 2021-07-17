@@ -4,11 +4,11 @@ import InviteMessageTextBox from "../../Components/InviteMessageTextBox/InviteMe
 function PastMatches({ Name, Time, About }) 
 {
   return (
-    <div>
+    <div className="connectionBody mb-2">
       <div className="PastMatchesBody ">
         <div className="PastMatchesProfile">
-          <img
-            className="chatonlineImg"
+          <img 
+            className="chatonlineImg" 
             src="https://img.icons8.com/offices/30/000000/user-male-skin-type-5.png"
             alt=""
           /> 
@@ -17,7 +17,7 @@ function PastMatches({ Name, Time, About })
         <div className="PastMatchesTime info">{Time}</div>
         <div className="about info">{About}</div>
         <div className="privateNoteBox mt-1">
-          <InviteMessageTextBox PastMatches={true} />
+          <InviteMessageTextBox PastMatches={true} /> 
         </div>
       </div>
     </div>

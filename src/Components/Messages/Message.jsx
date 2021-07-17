@@ -1,20 +1,19 @@
 import React from "react";
 import "./Message.css";
-function Message({ own, DP  }) {
+function Message({ own, DP, text, time  }) {
   return (
     <div className={own ? "message own" : "message"}>
       <div className="messageTop">
         <img
           className="messageImg"
           src={DP}
-          alt=""
+          alt="" 
         /> 
         <p className="messageText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-          ea? 
+          {text} 
         </p> 
       </div>
-      <div className="messageBottom info">25 minutes ago</div>
+      <div className="messageBottom info">{time}</div>
     </div>
   );
 } 
