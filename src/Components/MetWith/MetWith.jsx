@@ -37,13 +37,13 @@ function MetWith({firstPersonDP, firstPersonName, secondPersonName, time, second
             </Link>
           </div>
         </div>
-        <div className="likeBody mr-2 mt-1 mb-3">
+        <div className="likeBody mr-2 mt-1 mb-3"> 
           <span
             className={liked ? "likedButton upperName" : "likeButton upperName"}
           >
             {/* using onclick event to call likeChange function to set liked state */}
             <ThumbUpAltOutlinedIcon onClick={likeChange} />
-            {liked ? "Liked" : "Like"}
+            {liked ? "Liked" : "Like"} 
           </span>
         </div>
       </div>

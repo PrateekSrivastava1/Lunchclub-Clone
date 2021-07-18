@@ -7,18 +7,8 @@ import { Button } from "react-bootstrap";
 import ImageShow from "../../Components/ImageShow/ImageShow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import {
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-// import GoogleLogin from "react-google-login";
+import {faTwitter, faInstagram, faLinkedin, } from "@fortawesome/free-brands-svg-icons";
 function SignIn() {
-  // const responseGoogle = (response) => {
-  //   console.log(response);
-  //   console.log(response.profileObj);
-  // };
-
   return (
     <>
       <Container fluid>
@@ -86,19 +76,6 @@ function SignIn() {
                 Already have an account? <a href="">  Log in here.</a>
               </small>
             </div>
-            {/* --------------------------------------------------------------- */}
-            {/* there is a bug in google oauth, that is why I commented it for now. */}.
-            {/* <div className="Google_oAuth">
-              <GoogleLogin
-                clientId= {process.env.REACT_APP_CLIENT_ID}
-                buttonText="login"
-                callbackURL="http://localhost:3000/weekly"
-                onSuccess={responseGoogle}
-                onFailure={responseGoogle}
-                cookiePolicy={"single_host_origin"}
-              />
-            </div> */}
-            {/* --------------------------------------------------------------- */}
           </Col>
           <Col lg={6} col={12} className="d-flex justify-content-center column">
             <div className="p-2 right_column_width ">
@@ -122,12 +99,7 @@ function SignIn() {
         </Row>
         <br />
         <Row className="d-flex text-center p-3 mb-3">
-          <Col
-            lg={4}
-            col={4}
-            sm={4}
-            className=" "
-          >
+          <Col lg={4} col={4} sm={4} className=" ">
             <p className="text-primary d-flex justify-content-start m-2 pElement ">
                 Careers
                 <span>

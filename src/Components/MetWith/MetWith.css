@@ -52,13 +52,15 @@
 /* if liked is false */
 .likeButton{
     margin: 10px 10px;
+    cursor: pointer;
 }
 .likeButton:hover{
     color: rgb(69, 106, 221);
 } 
 
-/* if liked is true */
+/* if liked is true */ 
 .likedButton{
     margin: 10px 10px;
+    cursor: pointer;
     color: rgb(69, 106, 221);
 }
