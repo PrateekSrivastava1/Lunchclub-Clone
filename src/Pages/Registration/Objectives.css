@@ -1,0 +1,27 @@
+.helloMainBody {
+  background-color: rgb(255, 255, 255);
+  height: 800px; 
+} 
+.helloBody {
+  border-radius: 5px;
+  background-color: white;
+  width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content:space-around;
+}
+
+.objectiveHeading {
+    width: 500px; 
+}
+
+/* for smaller screens */
+@media only screen and (max-width: 600px){
+    .helloBody{
+        width: 100%;
+    }
+    .imageItem{
+        width: 200px;
+        height: 200px;
+    }
+} 

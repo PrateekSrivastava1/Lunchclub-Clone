@@ -31,7 +31,7 @@ function MetWith({firstPersonDP, firstPersonName, secondPersonName, time, second
             <span className="lowerName"> {secondPersonName} </span>
             <p className="info">{aboutSecondPerson}</p>
             <Link to="/Invite">
-              <button className="meetPeopleButton lowerName">
+              <button className="meetPeopleButton lowerName"> 
                 Meet people like {secondPersonName}
               </button>
             </Link>

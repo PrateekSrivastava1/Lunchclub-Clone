@@ -1,0 +1,51 @@
+.helloMainBody {
+  background-color: rgb(255, 255, 255);
+  height: 800px;
+}
+.helloBody {
+  border-radius: 5px;
+  background-color: white;
+  width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.helloLogo{
+    margin: 20px 0px 20px 210px;
+}
+.helloImg {
+  height: 200px;
+  object-fit: cover;
+  width: auto;
+}
+.inputs{
+    margin-top: 70px;
+}
+.helloInputText{
+    padding: 13px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgba(236, 234, 234, 0.411);
+    border: none;
+    width: 300px;
+}
+.helloSubmitButton{
+    padding: 13px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(69, 106, 221);
+    color: white;
+    border: none;
+    width: 300px;
+}
+/* for smaller screens */
+@media only screen and (max-width: 600px){
+    .helloImg{
+        height: 200px;
+        width: auto;
+    }
+}

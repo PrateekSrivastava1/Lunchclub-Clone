@@ -19,7 +19,7 @@ function createMetWithPeopleEntry({
       key={id}
       firstPersonDP={firstPersonDP}
       firstPersonName={firstPersonName}
-      secondPersonName={secondPersonName}
+      secondPersonName={secondPersonName} 
       time={time}
       secondPersonDP={secondPersonDP}
       aboutSecondPerson={aboutSecondPerson}
@@ -38,7 +38,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <BottomNavbars/>
+      <BottomNavbars/> 
     </div>
   );
 }

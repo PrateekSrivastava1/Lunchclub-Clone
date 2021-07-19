@@ -6,7 +6,7 @@ import "./SignIn.css";
 import { Button } from "react-bootstrap";
 import ImageShow from "../../Components/ImageShow/ImageShow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
 import {faTwitter, faInstagram, faLinkedin, } from "@fortawesome/free-brands-svg-icons";
 function SignIn() {
   return (
