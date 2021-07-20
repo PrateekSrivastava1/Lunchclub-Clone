@@ -34,41 +34,26 @@ function SignIn() {
                 professional impact. Powered by AI.
               </p>
               <div className="input_element text-center p-3">
-                <div className="input-group googleLabel ">
-                  <div className="input-group-prepend ">
-                    <span
-                      className="input-group-text border-primary bg-light"
-                      id="basic-addon1"
-                    >
-                      <img
-                        src="https://lunchclub.com/static/media/google.b1154755.svg"
-                        alt="G"
-                      />
-                      .
-                    </span>
-                  </div>
-
-                  <input
-                    type="button"
-                    className="form-control  googleButton text-primary border-primary "
-                    value="Sign Up with Google"
-                    placeholder="Sign Up with Google"
-                    aria-label="Username"
-                    aria-describedby="basic-addon1"
+                <button className="btn btn-default form-control  googleButton text-primary border-primary ">
+                  <img
+                    src="https://lunchclub.com/static/media/google.b1154755.svg"
+                    width="20"
                   />
-                </div>
+                <Link to="../Login"> Sign Up with google</Link>
+                </button>
+                <br />
                 <br /> <p className="pElement">OR</p>
                 <div className="input-group">
                   <input
                     type="text"
-                    className="form-control border-dark rounded-left"
+                    className="form-control border-primary rounded-left"
                     placeholder="Enter your email"
                     aria-label="Recipient's username"
                     aria-describedby="basic-addon2"
                   />
                   <div className="input-group-append">
                     <span
-                      className="input-group-text bg-primary rounded-right text-light"
+                      className="input-group-text bg-primary border-primary text-light"
                       type="button"
                       id="basic-addon2"
                     >

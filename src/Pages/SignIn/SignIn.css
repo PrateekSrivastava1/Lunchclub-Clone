@@ -37,10 +37,14 @@ small{
   background-color: #ffffff;
 }
 Button{
-  background-color: #ffffff;
+  background-color: #ffffff; 
 }
 .googleIcon{
   color: red;
+}
+
+a{
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
