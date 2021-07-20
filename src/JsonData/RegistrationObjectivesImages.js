@@ -1,4 +1,4 @@
-const RegistrationImages = [
+const RegistrationObjectivesImages = [
   {
     id: 1,
     Imagelink:
@@ -74,4 +74,4 @@ const RegistrationImages = [
     Title: "Explore new perspectives",
   },
 ];
-export default RegistrationImages;
+export default RegistrationObjectivesImages;

@@ -5,7 +5,7 @@ import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
 import ImageGallery from "../../Components/ImageGallery/ImageGallery";
 
 // importing json data for images
-import RegistrationImages from "../../JsonData/RegistrationImages";
+import RegistrationObjectivesImages from "../../JsonData/RegistrationObjectivesImages";
 
 
 function createRegistrationImageEntry({ id, Imagelink, Title }) {
@@ -16,10 +16,9 @@ function Objectives() {
 
   return (
     <>
-      <Navbars />
-      <div className="helloMainBody pt-5 mt-5">
+      <div className="objectiveMainBody pt-5 mt-5">
         <div className=" container">
-          <div className="helloBody">
+          <div className="objectiveBody">
             <div className="container d-flex justify-content-center">
               <div className="objectiveHeading">
                 <h3 className="heading text-center">
@@ -33,7 +32,7 @@ function Objectives() {
                   </strong>
                 </p>
               </div>
-            </div>
+            </div> 
           </div>
 
           {/* image gallery */}
@@ -44,7 +43,7 @@ function Objectives() {
               {/* ---------------------------------------------------------------------------------------------- */}
               {/* using map to show images, and collecting data from RegistrationImages.js file */}
 
-              {RegistrationImages.map(createRegistrationImageEntry)}
+              {RegistrationObjectivesImages.map(createRegistrationImageEntry)}
 
               {/* --------------------------------------------------------------------------------------- */}
               <div className="buttons">
@@ -55,7 +54,6 @@ function Objectives() {
           </div>
         </div>
       </div>
-      <BottomNavbars />
     </>
   );
 }

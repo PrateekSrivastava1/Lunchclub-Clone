@@ -1,8 +1,8 @@
-.helloMainBody {
+.objectiveMainBody {
   background-color: rgb(255, 255, 255);
   height: 800px; 
 } 
-.helloBody {
+.objectiveBody {
   border-radius: 5px;
   background-color: white;
   width: 700px;

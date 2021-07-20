@@ -6,7 +6,6 @@ import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
 function Hello() {
   return (
     <>
-      <Navbars />
       <div className="helloMainBody pt-5 mt-5">
         <div className=" container-fluid">
           <div className="helloBody">
@@ -45,7 +44,6 @@ function Hello() {
           </div>
         </div>
       </div>
-      <BottomNavbars />
     </>
   );
 }
