@@ -1,6 +1,6 @@
 .helloMainBody {
   background-color: rgb(255, 255, 255);
-  height: 800px;
+  height: 1000px;
 }
 .helloBody {
   border-radius: 5px;
@@ -13,10 +13,10 @@
 .helloLogo{
     margin: 20px 0px 20px 210px;
 }
-.helloImg {
+.helloImg { 
   height: 200px;
   object-fit: cover;
-  width: auto;
+  width: 100%;
 }
 .inputs{
     margin-top: 70px;

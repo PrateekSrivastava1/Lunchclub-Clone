@@ -15,10 +15,10 @@ function Hello() {
                 />
               </div>
               <img
-                className="helloImg"
+                className="helloImg  d-flex justify-content-center img-fluid mx-auto"
                 src="https://lunchclub.com/static/media/cities-graphic.e00b93ed.svg"
                 alt=""
-              />
+              /> 
               <div className="inputs"> 
                 <input
                   className="helloInputText info"
