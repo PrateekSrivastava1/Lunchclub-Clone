@@ -1,3 +1,7 @@
+
+
+
+
 # lunch-club clone
 
 ## About
@@ -5,6 +9,7 @@
 Lunchclub is an American social platform that uses artificial intelligence and machine learning to connect users with common interests and objectives. The platform is accessible through a mobile app or a web browser.
 
 ## Demonstration
+[lunch-club clone](https://user-images.githubusercontent.com/65366517/126386579-9ca2718d-9fce-4c2b-bf28-2b05cb01609a.mp4)
 
 ### Use it here [lunch-club clone](https://lunch-club.herokuapp.com/ "lunch-club clone")
 
