@@ -15,6 +15,27 @@
     width: 500px; 
 }
 
+.objectivesButtons{
+  width: 40%;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 1px solid rgb(69, 106, 221);
+}
+
+.backButton{
+  color: rgb(69, 106, 221);
+}
+
+.backButton:hover{
+  background-color: rgba(116, 128, 163, 0.377);
+}
+
+.nextButton{
+  color: white;
+  background-color: rgb(69, 106, 221);
+}
+
 /* for smaller screens */
 @media only screen and (max-width: 600px){
     .helloBody{

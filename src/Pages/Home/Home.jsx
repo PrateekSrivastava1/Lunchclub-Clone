@@ -2,8 +2,10 @@ import React from "react";
 import "./Home.css";
 import Navbars from "../../Components/Navbars/Navbars";
 import MetWith from "../../Components/MetWith/MetWith";
-import MetWithData from "../../JsonData/MetWithData";
 import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
+
+// json data
+import MetWithData from "../../JsonData/MetWithData";
 
 function createMetWithPeopleEntry({
   id,

@@ -1,14 +1,19 @@
 import React from "react";
 import "./Objectives.css";
-import { Link } from "react-router-dom";
 import Navbars from "../../Components/Navbars/Navbars";
 import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
+import ImageGallery from "../../Components/ImageGallery/ImageGallery";
 
 // importing json data for images
-import MetWithData from "../../JsonData/RegistrationImages";
+import RegistrationImages from "../../JsonData/RegistrationImages";
+
+
+function createRegistrationImageEntry({ id, Imagelink, Title }) {
+  return <ImageGallery key={id} Imagelink={Imagelink} Title={Title} />;
+}
 
 function Objectives() {
-  console.log(MetWithData.length);
+
   return (
     <>
       <Navbars />
@@ -31,19 +36,22 @@ function Objectives() {
             </div>
           </div>
 
-            {/* image gallery */}
-          <div class="container">
-            <div class="row text-center text-lg-left">
-              <div class="col-lg-3 col-md-4 col-6">
-                <a href="#" class="d-block mb-4 h-100">
-                  <img
-                    class="img-fluid img-thumbnail"
-                    src=""
-                    alt=""
-                  />
-                </a>
-              </div>
-            </div>
+          {/* image gallery */}
+
+          <div class="container w-75 mb-5 pb-5">
+            <div class="row text-center text-lg-left mb-5 pb-5">
+
+              {/* ---------------------------------------------------------------------------------------------- */}
+              {/* using map to show images, and collecting data from RegistrationImages.js file */}
+
+              {RegistrationImages.map(createRegistrationImageEntry)}
+
+              {/* --------------------------------------------------------------------------------------- */}
+              <div className="buttons">
+                <button className="objectivesButtons backButton" type="submit"><strong>Back</strong></button>
+                <button className="objectivesButtons nextButton" type="submit"><strong>Next</strong></button>
+              </div>           
+            </div> 
           </div>
         </div>
       </div>

@@ -20,8 +20,8 @@ function ImageShow() {
       imageData = { Image2 };
     } else if (index === 3) {
       imageData = { Image3 };
-    } else {
-      index = 1;
+    } else { 
+      index = 1; 
     }
     document.getElementById("image").src = "" + imageData;
     index++;
