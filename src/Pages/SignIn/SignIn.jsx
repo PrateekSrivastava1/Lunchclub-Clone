@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./SignIn.css";
 import { Button } from "react-bootstrap";
-// import ImageShow from "../../Components/ImageShow/ImageShow";
+import ImageShow from "../../Components/ImageShow/ImageShow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import {
@@ -13,37 +13,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-// import Image1 from "./src/Pages/SignInPageImages/Image1.svg";
-// import Image2 from "./src/Pages/SignInPageImages/Image1.svg";
-// import Image3 from "./src/Pages/SignInPageImages/Image1.svg";
-
 function SignIn() {
-  const imgs = [
-    "https://lunchclub.com/static/media/tell.9ad906c2.svg",
-    "https://lunchclub.com/static/media/connection.5e02f461.svg",
-    "https://lunchclub.com/static/media/conversation.5acf03c4.svg",
-  ];
-
-  const indexRef = useRef(1);
-
-  const [currImg, setCurrImg] = useState(
-    "https://lunchclub.com/static/media/conversation.5acf03c4.svg"
-  );
-
-  useEffect(() => {
-    const variable = setTimeout(() => {
-      setCurrImg(imgs[indexRef.current]);
-      indexRef.current = indexRef.current + 1;
-      if (indexRef.current === imgs.length) indexRef.current = 0;
-    }, 1000);
-    return () => clearTimeout(variable);  
-  }, [currImg]);
-  // console.log(currImg);
-  const imgStyle = {
-    backgroundImage: `url(${currImg})`, 
-    transition: " all 0.2s ease", 
-  };
-
   return (
     <>
       <Container fluid>
@@ -111,7 +81,7 @@ function SignIn() {
                   </div>
                 </div>
               </div>
-              <small> 
+              <small>
                 Already have an account?
                 <Link to="../Login"> Log in here.</Link>
               </small>
@@ -124,7 +94,7 @@ function SignIn() {
                   className="text-primary border-primary rounded bg-light"
                   variant="light"
                 >
-                  <Link className="text-primary link" to="../Login"> 
+                  <Link className="text-primary link" to="../Login">
                     Log In
                   </Link>
                 </Button>
@@ -136,15 +106,7 @@ function SignIn() {
                   {/* <ImageShow />  */}
 
                   {/* ---------------------------------------------------------- */}
-
-                  <div className="pt-5">
-                    <div
-                      className="showImg"
-                      width="250px"
-                      height="250px"
-                      style={imgStyle}
-                    ></div>
-                  </div>
+                  <ImageShow />
 
                   {/* ---------------------------------------------------------- */}
                 </div>
