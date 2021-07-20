@@ -1,14 +1,49 @@
-import React from "react";
+import { useEffect, useRef, useState, React } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./SignIn.css";
 import { Button } from "react-bootstrap";
-import ImageShow from "../../Components/ImageShow/ImageShow";
+// import ImageShow from "../../Components/ImageShow/ImageShow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom"; 
-import {faTwitter, faInstagram, faLinkedin, } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+import {
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+
+// import Image1 from "./src/Pages/SignInPageImages/Image1.svg";
+// import Image2 from "./src/Pages/SignInPageImages/Image1.svg";
+// import Image3 from "./src/Pages/SignInPageImages/Image1.svg";
+
 function SignIn() {
+  const imgs = [
+    "https://lunchclub.com/static/media/tell.9ad906c2.svg",
+    "https://lunchclub.com/static/media/connection.5e02f461.svg",
+    "https://lunchclub.com/static/media/conversation.5acf03c4.svg",
+  ];
+
+  const indexRef = useRef(1);
+
+  const [currImg, setCurrImg] = useState(
+    "https://lunchclub.com/static/media/conversation.5acf03c4.svg"
+  );
+
+  useEffect(() => {
+    const variable = setTimeout(() => {
+      setCurrImg(imgs[indexRef.current]);
+      indexRef.current = indexRef.current + 1;
+      if (indexRef.current === imgs.length) indexRef.current = 0;
+    }, 1000);
+    return () => clearTimeout(variable);  
+  }, [currImg]);
+  // console.log(currImg);
+  const imgStyle = {
+    backgroundImage: `url(${currImg})`, 
+    transition: " all 0.2s ease", 
+  };
+
   return (
     <>
       <Container fluid>
@@ -42,7 +77,7 @@ function SignIn() {
                       .
                     </span>
                   </div>
-                  
+
                   <input
                     type="button"
                     className="form-control  googleButton text-primary border-primary "
@@ -53,7 +88,7 @@ function SignIn() {
                   />
                 </div>
                 <br /> <p className="pElement">OR</p>
-                <div className="input-group"> 
+                <div className="input-group">
                   <input
                     type="text"
                     className="form-control border-dark rounded-left"
@@ -67,13 +102,18 @@ function SignIn() {
                       type="button"
                       id="basic-addon2"
                     >
-                    <strong><Link className=" link text-light" to="../Weekly">Get Started</Link> </strong> 
+                      <strong>
+                        <Link className=" link text-light" to="../Hello">
+                          Get Started
+                        </Link>
+                      </strong>
                     </span>
                   </div>
                 </div>
               </div>
-              <small>
-                Already have an account? <a href="">  Log in here.</a>
+              <small> 
+                Already have an account?
+                <Link to="../Login"> Log in here.</Link>
               </small>
             </div>
           </Col>
@@ -84,14 +124,29 @@ function SignIn() {
                   className="text-primary border-primary rounded bg-light"
                   variant="light"
                 >
-                  <Link className="text-primary link" to="../Weekly">Log In</Link>
+                  <Link className="text-primary link" to="../Login"> 
+                    Log In
+                  </Link>
                 </Button>
               </div>
               <div className="text-center">
                 <small>HOW IT WORKS</small>
                 <h1>It's simple, really</h1>
                 <div id="imageData" className="pt-5">
-                  <ImageShow />
+                  {/* <ImageShow />  */}
+
+                  {/* ---------------------------------------------------------- */}
+
+                  <div className="pt-5">
+                    <div
+                      className="showImg"
+                      width="250px"
+                      height="250px"
+                      style={imgStyle}
+                    ></div>
+                  </div>
+
+                  {/* ---------------------------------------------------------- */}
                 </div>
               </div>
             </div>
@@ -101,11 +156,11 @@ function SignIn() {
         <Row className="d-flex text-center p-3 mb-3">
           <Col lg={4} col={4} sm={4} className=" ">
             <p className="text-primary d-flex justify-content-start m-2 pElement ">
-                Careers
-                <span>
-                  <small> WE'RE HIRING</small>
-                </span>
-              </p>
+              Careers
+              <span>
+                <small> WE'RE HIRING</small>
+              </span>
+            </p>
           </Col>
           <Col lg={4} col={4} sm={4} className="">
             <FontAwesomeIcon
@@ -118,7 +173,7 @@ function SignIn() {
             />
             <FontAwesomeIcon
               className="m-2 fa-lg text-primary"
-              icon={faLinkedin}  
+              icon={faLinkedin}
             />
           </Col>
           <Col lg={4} col={4} sm={4} className="d-flex justify-content-end">
@@ -127,7 +182,7 @@ function SignIn() {
               src="https://lunchclub.com/static/media/logo-icon.bacfc46d.svg"
               alt=""
             />
-          </Col> 
+          </Col>
         </Row>
       </Container>
     </>

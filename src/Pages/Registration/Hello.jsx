@@ -1,8 +1,6 @@
 import React from "react";
 import "./Hello.css";
 import { Link } from "react-router-dom";
-import Navbars from "../../Components/Navbars/Navbars";
-import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
 function Hello() {
   return (
     <>

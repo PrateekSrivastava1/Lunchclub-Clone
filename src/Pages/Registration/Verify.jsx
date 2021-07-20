@@ -1,8 +1,6 @@
 import React from "react";
 import "./Verify.css";
-
-import Navbars from "../../Components/Navbars/Navbars";
-import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
+import { Link } from "react-router-dom";
 import ImageGallery from "../../Components/ImageGallery/ImageGallery";
 
 // importing json data for images
@@ -16,7 +14,7 @@ function createRegistrationVerifyImageEntry({ id, verify, Imagelink, Title }) {
 
 function Verify() {
   return (
-    <> 
+    <>
       <div className="verifyMainBody pt-5 mt-5">
         <div className=" container">
           <div className="verifyBody">
@@ -27,7 +25,7 @@ function Verify() {
                   src="https://lunchclub.com/static/media/logo2.4c4b75fd.svg"
                   alt=""
                 />
-                <br /> 
+                <br />
                 <p className="text-center heading">
                   <strong>
                     <h4>How it works</h4>
@@ -44,13 +42,15 @@ function Verify() {
               {/* ---------------------------------------------------------------------------------------------- */}
               {/* using map to show images, and collecting data from RegistrationImages.js file */}
 
-              {RegistrationVerifyImages.map(createRegistrationVerifyImageEntry)}  
+              {RegistrationVerifyImages.map(createRegistrationVerifyImageEntry)}
 
               {/* --------------------------------------------------------------------------------------- */}
               <div className="buttons">
-                <button className="verifyButtons nextButton" type="submit">
-                  <strong>Get Started</strong>
-                </button>
+                <Link to="./Weekly">
+                  <button className="verifyButtons nextButton" type="submit">
+                    <strong>Get Started</strong>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

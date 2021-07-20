@@ -72,7 +72,7 @@ function Navbars() {
               <Nav className="ms-auto ">
 
                 <div className="iconSpace ">
-                  <LinkContainer to="/">
+                  <LinkContainer to="../Home">
                     <Nav.Link className="p-2 iconBorder ">
                       <HomeIcon />
                     </Nav.Link>
