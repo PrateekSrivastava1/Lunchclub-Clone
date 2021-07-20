@@ -8,7 +8,7 @@ function ImageGallery({ id, Imagelink, Title, verify }) {
         <img className="img-fluid " src={Imagelink} alt="" /> 
         <p className="info"> 
           <strong>{Title}</strong>
-        </p> 
+        </p>  
       </div>
     </div> 
   );

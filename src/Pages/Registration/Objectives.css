@@ -37,8 +37,8 @@
 }
 
 /* for smaller screens */
-@media only screen and (max-width: 600px){
-    .helloBody{
+@media only screen and (max-width: 600px){ 
+    .objectiveBody{
         width: 100%;
     }
     .imageItem{

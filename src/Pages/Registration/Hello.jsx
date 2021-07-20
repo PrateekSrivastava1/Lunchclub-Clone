@@ -9,7 +9,7 @@ function Hello() {
       <div className="helloMainBody pt-5 mt-5">
         <div className=" container-fluid">
           <div className="helloBody">
-            <div className="container ">
+            <div className="container "> 
               <div className="helloLogo"> 
                 <img
                   src="https://lunchclub.com/static/media/logo2.4c4b75fd.svg"
@@ -21,7 +21,7 @@ function Hello() {
                 src="https://lunchclub.com/static/media/cities-graphic.e00b93ed.svg"
                 alt=""
               />
-              <div className="inputs">
+              <div className="inputs"> 
                 <input
                   className="helloInputText info"
                   placeholder="Your First Name"

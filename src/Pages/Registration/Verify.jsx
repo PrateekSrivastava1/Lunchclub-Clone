@@ -44,7 +44,7 @@ function Verify() {
               {/* ---------------------------------------------------------------------------------------------- */}
               {/* using map to show images, and collecting data from RegistrationImages.js file */}
 
-              {RegistrationVerifyImages.map(createRegistrationVerifyImageEntry)}
+              {RegistrationVerifyImages.map(createRegistrationVerifyImageEntry)}  
 
               {/* --------------------------------------------------------------------------------------- */}
               <div className="buttons">
