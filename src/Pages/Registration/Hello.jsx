@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Hello() {
   return (
     <>
-      <div className="helloMainBody pt-5 mt-5">
+      <div className="helloMainBody">
         <div className=" container-fluid">
           <div className="helloBody">
             <div className="container "> 

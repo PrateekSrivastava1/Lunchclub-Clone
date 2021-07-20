@@ -15,7 +15,7 @@ function createRegistrationVerifyImageEntry({ id, verify, Imagelink, Title }) {
 function Verify() {
   return (
     <>
-      <div className="verifyMainBody pt-5 mt-5">
+      <div className="verifyMainBody ">
         <div className=" container">
           <div className="verifyBody">
             <div className="container d-flex justify-content-center">

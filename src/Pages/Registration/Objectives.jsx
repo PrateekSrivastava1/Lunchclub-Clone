@@ -13,7 +13,7 @@ function createRegistrationImageEntry({ id, Imagelink, Title }) {
 function Objectives() {
   return (
     <>
-      <div className="objectiveMainBody pt-5 mt-5">
+      <div className="objectiveMainBody">
         <div className=" container">
           <div className="objectiveBody">
             <div className="container d-flex justify-content-center">
