@@ -18,6 +18,17 @@ Lunchclub is an American social platform that uses artificial intelligence and m
 5. REACT.JS
 6. NODE.JS
 
+## Features
+
+- Meet people with common interest
+- Like or unlike public meet post
+- Set date and time of the meeting
+- Select your meeting topic
+- Send invitation to you friends via mail, social media or on the app it self
+- Check your past matches and send private notes
+- Chat with your friends
+
+
 ## Getting Started
 
 ### Prerequisites
