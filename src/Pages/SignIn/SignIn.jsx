@@ -1,17 +1,16 @@
-import { useEffect, useRef, useState, React } from "react";
+import { React } from "react";
+import "./SignIn.css";
+import { Link } from "react-router-dom";
+
+import ImageShow from "../../Components/ImageShow/ImageShow";
+
+// bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "./SignIn.css";
 import { Button } from "react-bootstrap";
-import ImageShow from "../../Components/ImageShow/ImageShow";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
-import {
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import {faTwitter, faInstagram, faLinkedin, } from "@fortawesome/free-brands-svg-icons";
 
 function SignIn() {
   return (
@@ -83,7 +82,7 @@ function SignIn() {
                     Log In
                   </Link>
                 </Button>
-              </div>
+              </div> 
               <div className="text-center">
                 <small>HOW IT WORKS</small>
                 <h1>It's simple, really</h1>
@@ -119,7 +118,7 @@ function SignIn() {
               icon={faTwitter}
             />
             <FontAwesomeIcon
-              className="m-2 fa-lg text-primary"
+              className="m-2 fa-lg text-primary" 
               icon={faLinkedin}
             />
           </Col>

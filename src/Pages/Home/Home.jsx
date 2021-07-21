@@ -7,6 +7,7 @@ import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
 // json data
 import MetWithData from "../../JsonData/MetWithData";
 
+
 function createMetWithPeopleEntry({
   id,
   firstPersonDP,

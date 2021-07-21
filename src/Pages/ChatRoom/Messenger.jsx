@@ -1,7 +1,7 @@
 import React from "react";
+import "./Messenger.css";
 import Navbars from "../../Components/Navbars/Navbars";
 import BottomNavbars from "../../Components/BottomNavbars/BottomNavbars";
-import "./Messenger.css";
 import Conversation from "../../Components/Conversations/Conversation";
 import Message from "../../Components/Messages/Message";
 import ChatOnline from "../../Components/ChatOnline/ChatOnline";
@@ -32,7 +32,7 @@ function Messenger() {
                 <input
                   placeholder="Search for friend"
                   type="text"
-                  className="chatMenuInput"
+                  className="chatMenuInput" 
                 />
 
                 {/* Here we are using mapping technique so that we can avoid writing code again and again. */}
@@ -42,7 +42,7 @@ function Messenger() {
             </div>
             <div className="chatBox">
               <div className="chatBoxWrapper">
-                <div className="online">
+                <div className="online"> 
                   <ChatOnline
                     Name={"Prateek"}
                     DP={
@@ -61,14 +61,13 @@ function Messenger() {
                     placeholder="Type Something here..."
                   ></textarea>
                   <button className="chatSubmitButton">Send</button>
-                 
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
       </div>
+      <BottomNavbars/>
     </>
   );
 }
