@@ -5,6 +5,9 @@
 Lunchclub is an American social platform that uses artificial intelligence and machine learning to connect users with common interests and objectives. The platform is accessible through a mobile app or a web browser.
 
 ## Demonstration
+
+<img width="1512" alt="Screenshot 2023-11-23 at 4 01 57 PM" src="https://github.com/PrateekSrivastava1/Lunchclub-Clone/assets/65366517/9015ef07-633a-4edb-bb4d-14760a6af2dc">
+
 [lunch-club clone](https://user-images.githubusercontent.com/65366517/126427960-5682ec0a-cec3-451f-af42-2f6efd67b1df.mp4)
 
 ### Use it here [lunch-club clone](https://lunch-club.herokuapp.com/ "lunch-club clone")
